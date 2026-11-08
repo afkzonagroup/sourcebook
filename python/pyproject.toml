@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sourcebook"
+version = "0.1.0"
+description = "The public summary of training content for general-purpose AI models (AI Act Article 53(1)(d)) in the AI Office template: schema, dataset-card collector, crawl-log domain ranking, validation, Markdown and model-card output."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "LICENSE-ADDITIONAL-TERMS.md", "src/sourcebook/data/PSL-LICENSE.txt"]
+authors = [{ name = "MB AFKzona Group" }]
+keywords = ["ai act", "general-purpose ai", "training data", "hugging face", "transparency"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/afkzonagroup/sourcebook"
+Issues = "https://github.com/afkzonagroup/sourcebook/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sourcebook = ["data/template-v1.json", "data/public_suffix_list.dat.gz", "data/PSL-LICENSE.txt"]

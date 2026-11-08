@@ -1,0 +1,315 @@
+{
+ "source": "https://github.com/publicsuffix/list/blob/main/tests/test_psl.txt",
+ "licence": "CC0-1.0 (public domain dedication by the Public Suffix List maintainers)",
+ "note": "Run with the PRIVATE section included, as the original tests expect.",
+ "cases": [
+  {
+   "input": "COM",
+   "expect": null
+  },
+  {
+   "input": "example.COM",
+   "expect": "example.com"
+  },
+  {
+   "input": "WwW.example.COM",
+   "expect": "example.com"
+  },
+  {
+   "input": ".com",
+   "expect": null
+  },
+  {
+   "input": ".example",
+   "expect": null
+  },
+  {
+   "input": ".example.com",
+   "expect": null
+  },
+  {
+   "input": ".example.example",
+   "expect": null
+  },
+  {
+   "input": "example",
+   "expect": null
+  },
+  {
+   "input": "example.example",
+   "expect": "example.example"
+  },
+  {
+   "input": "b.example.example",
+   "expect": "example.example"
+  },
+  {
+   "input": "a.b.example.example",
+   "expect": "example.example"
+  },
+  {
+   "input": "biz",
+   "expect": null
+  },
+  {
+   "input": "domain.biz",
+   "expect": "domain.biz"
+  },
+  {
+   "input": "b.domain.biz",
+   "expect": "domain.biz"
+  },
+  {
+   "input": "a.b.domain.biz",
+   "expect": "domain.biz"
+  },
+  {
+   "input": "com",
+   "expect": null
+  },
+  {
+   "input": "example.com",
+   "expect": "example.com"
+  },
+  {
+   "input": "b.example.com",
+   "expect": "example.com"
+  },
+  {
+   "input": "a.b.example.com",
+   "expect": "example.com"
+  },
+  {
+   "input": "uk.com",
+   "expect": null
+  },
+  {
+   "input": "example.uk.com",
+   "expect": "example.uk.com"
+  },
+  {
+   "input": "b.example.uk.com",
+   "expect": "example.uk.com"
+  },
+  {
+   "input": "a.b.example.uk.com",
+   "expect": "example.uk.com"
+  },
+  {
+   "input": "test.ac",
+   "expect": "test.ac"
+  },
+  {
+   "input": "mm",
+   "expect": null
+  },
+  {
+   "input": "c.mm",
+   "expect": null
+  },
+  {
+   "input": "b.c.mm",
+   "expect": "b.c.mm"
+  },
+  {
+   "input": "a.b.c.mm",
+   "expect": "b.c.mm"
+  },
+  {
+   "input": "jp",
+   "expect": null
+  },
+  {
+   "input": "test.jp",
+   "expect": "test.jp"
+  },
+  {
+   "input": "www.test.jp",
+   "expect": "test.jp"
+  },
+  {
+   "input": "ac.jp",
+   "expect": null
+  },
+  {
+   "input": "test.ac.jp",
+   "expect": "test.ac.jp"
+  },
+  {
+   "input": "www.test.ac.jp",
+   "expect": "test.ac.jp"
+  },
+  {
+   "input": "kyoto.jp",
+   "expect": null
+  },
+  {
+   "input": "test.kyoto.jp",
+   "expect": "test.kyoto.jp"
+  },
+  {
+   "input": "ide.kyoto.jp",
+   "expect": null
+  },
+  {
+   "input": "b.ide.kyoto.jp",
+   "expect": "b.ide.kyoto.jp"
+  },
+  {
+   "input": "a.b.ide.kyoto.jp",
+   "expect": "b.ide.kyoto.jp"
+  },
+  {
+   "input": "c.kobe.jp",
+   "expect": null
+  },
+  {
+   "input": "b.c.kobe.jp",
+   "expect": "b.c.kobe.jp"
+  },
+  {
+   "input": "a.b.c.kobe.jp",
+   "expect": "b.c.kobe.jp"
+  },
+  {
+   "input": "city.kobe.jp",
+   "expect": "city.kobe.jp"
+  },
+  {
+   "input": "www.city.kobe.jp",
+   "expect": "city.kobe.jp"
+  },
+  {
+   "input": "ck",
+   "expect": null
+  },
+  {
+   "input": "test.ck",
+   "expect": null
+  },
+  {
+   "input": "b.test.ck",
+   "expect": "b.test.ck"
+  },
+  {
+   "input": "a.b.test.ck",
+   "expect": "b.test.ck"
+  },
+  {
+   "input": "www.ck",
+   "expect": "www.ck"
+  },
+  {
+   "input": "www.www.ck",
+   "expect": "www.ck"
+  },
+  {
+   "input": "us",
+   "expect": null
+  },
+  {
+   "input": "test.us",
+   "expect": "test.us"
+  },
+  {
+   "input": "www.test.us",
+   "expect": "test.us"
+  },
+  {
+   "input": "ak.us",
+   "expect": null
+  },
+  {
+   "input": "test.ak.us",
+   "expect": "test.ak.us"
+  },
+  {
+   "input": "www.test.ak.us",
+   "expect": "test.ak.us"
+  },
+  {
+   "input": "k12.ak.us",
+   "expect": null
+  },
+  {
+   "input": "test.k12.ak.us",
+   "expect": "test.k12.ak.us"
+  },
+  {
+   "input": "www.test.k12.ak.us",
+   "expect": "test.k12.ak.us"
+  },
+  {
+   "input": "食狮.com.cn",
+   "expect": "食狮.com.cn"
+  },
+  {
+   "input": "食狮.公司.cn",
+   "expect": "食狮.公司.cn"
+  },
+  {
+   "input": "www.食狮.公司.cn",
+   "expect": "食狮.公司.cn"
+  },
+  {
+   "input": "shishi.公司.cn",
+   "expect": "shishi.公司.cn"
+  },
+  {
+   "input": "公司.cn",
+   "expect": null
+  },
+  {
+   "input": "食狮.中国",
+   "expect": "食狮.中国"
+  },
+  {
+   "input": "www.食狮.中国",
+   "expect": "食狮.中国"
+  },
+  {
+   "input": "shishi.中国",
+   "expect": "shishi.中国"
+  },
+  {
+   "input": "中国",
+   "expect": null
+  },
+  {
+   "input": "xn--85x722f.com.cn",
+   "expect": "xn--85x722f.com.cn"
+  },
+  {
+   "input": "xn--85x722f.xn--55qx5d.cn",
+   "expect": "xn--85x722f.xn--55qx5d.cn"
+  },
+  {
+   "input": "www.xn--85x722f.xn--55qx5d.cn",
+   "expect": "xn--85x722f.xn--55qx5d.cn"
+  },
+  {
+   "input": "shishi.xn--55qx5d.cn",
+   "expect": "shishi.xn--55qx5d.cn"
+  },
+  {
+   "input": "xn--55qx5d.cn",
+   "expect": null
+  },
+  {
+   "input": "xn--85x722f.xn--fiqs8s",
+   "expect": "xn--85x722f.xn--fiqs8s"
+  },
+  {
+   "input": "www.xn--85x722f.xn--fiqs8s",
+   "expect": "xn--85x722f.xn--fiqs8s"
+  },
+  {
+   "input": "shishi.xn--fiqs8s",
+   "expect": "shishi.xn--fiqs8s"
+  },
+  {
+   "input": "xn--fiqs8s",
+   "expect": null
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+# Example summary for a fictional open-weight model. Every name, address and
+# dataset choice below is invented for illustration (example.org and
+# example.eu are reserved example domains).
+sourcebook: 1
+summary_version:
+  version: "1.1"
+  previous_versions:
+    - version: "1.0"
+      link: https://example.org/models/nimbus-7b/training-summary-1.0
+last_update: 2026-10-15
+
+general_information:
+  provider:
+    name_and_contact_details: |-
+      Example Labs B.V., Keizersgracht 1, 1015 AA Amsterdam, Netherlands
+      ai-transparency@example.eu
+    authorised_representative:
+      applicable: false
+      not_applicable_reason: established_in_union
+  model:
+    versioned_model_names:
+      - name: Nimbus-7B-v1.1
+        documentation_links:
+          - https://huggingface.co/example-labs/Nimbus-7B-v1.1
+      - name: Nimbus-7B-Instruct-v1.1
+        documentation_links:
+          - https://huggingface.co/example-labs/Nimbus-7B-Instruct-v1.1
+    model_dependencies:
+      is_modification: false
+      models: []
+    placement_dates:
+      - model: Nimbus-7B-v1.1
+        date: 2026-09-01
+      - model: Nimbus-7B-Instruct-v1.1
+        date: 2026-09-15
+  modalities:
+    text:
+      present: true
+      size_range: 1b_to_10t_tokens
+      size_other_unit: ""
+      types_of_content: >-
+        Web pages (news, encyclopaedic and educational content, forums),
+        scientific articles, public-domain books, source code with permissive
+        licences, and instruction and preference data for post-training.
+    image:
+      present: false
+    audio:
+      present: false
+    video:
+      present: false
+    other: []
+  latest_data_collection:
+    date: 2026-05
+    continuous_training: false
+  linguistic_characteristics: >-
+    Mostly English (about 70 % of tokens). All 24 official EU languages are
+    included; German, French, Spanish, Italian, Dutch and Polish each make up
+    1 to 4 % of tokens, the other official languages less than 1 % each.
+  other_characteristics: >-
+    Web content was collected worldwide, with a larger share of websites from
+    EU Member States than in a random sample of the web.
+  additional_comments: >-
+    Token counts use the model's own tokenizer after de-duplication and
+    filtering.
+
+data_sources:
+  public_datasets:
+    used: true
+    modalities:
+      selected: [text]
+    large_datasets:
+      - name: FineWeb
+        link: https://huggingface.co/datasets/HuggingFaceFW/fineweb
+        selection_approach: Snapshots from 2023 and 2024, after language identification and quality filtering.
+      - name: Wikipedia (Wikimedia dumps, 2026-03)
+        link: https://huggingface.co/datasets/wikimedia/wikipedia
+    other_datasets_description: >-
+      Smaller public datasets of question-answer pairs and mathematical word
+      problems in English (machine generated and human written, collected
+      between 2016 and 2024).
+  licensed_datasets:
+    concluded: true
+    modalities:
+      selected: [text]
+  other_private_datasets:
+    obtained: false
+  crawled_data:
+    crawlers_used: true
+    crawler_names: [ExampleBot/1.0]
+    purposes: Collecting publicly accessible web pages to train language models.
+    crawler_behaviour: >-
+      ExampleBot follows robots.txt, including rules for its own user agent,
+      and the TDM Reservation Protocol (tdmrep.json and the tdm-reservation
+      header). It does not log in, does not bypass paywalls or captchas, and
+      limits its request rate per host.
+    collection_period:
+      from: 2025-01
+      to: 2026-05
+    content_description: >-
+      Publicly accessible text from news sites, blogs, forums, documentation
+      sites, government portals and educational sites, in all official EU
+      languages and English.
+    modalities:
+      selected: [text]
+    top_domains:
+      domains: [example.org, example.com, example.net]
+      access_information: The complete list is available at https://example.org/models/nimbus-7b/domains.txt
+  user_data:
+    from_model_interactions: false
+    from_other_services: false
+  synthetic_data:
+    created: true
+    modalities:
+      selected: [text]
+    market_models: []
+    other_models_information: >-
+      An earlier internal model of the provider (not placed on the market),
+      trained on the same public and crawled data as described in this
+      Summary, generated instruction-following examples for post-training.
+  other_sources:
+    used: true
+    description: >-
+      Instruction and preference data written and labelled by contracted
+      annotators for this model.
+
+data_processing:
+  tdm_reservations:
+    code_of_practice_signatory: true
+    measures: >-
+      Before and during collection, the crawler honours robots.txt and the
+      TDM Reservation Protocol. Pages whose HTML or HTTP headers express a
+      machine-readable reservation are dropped. For public datasets, only
+      datasets whose curators state that they honour opt-outs are used.
+    additional_comments: The copyright policy is published at https://example.org/copyright-policy
+  illegal_content:
+    measures: >-
+      URL block lists for known sources of child sexual abuse material and
+      terrorist content, hash matching against industry hash lists, and
+      classifiers for illegal content, applied before training.
+  other_information: ""
+
+information_gaps: []

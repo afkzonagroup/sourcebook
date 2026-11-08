@@ -1,0 +1,2041 @@
+[
+  {
+    "name": "three-percent-boundary",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "3",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "97",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "c",
+        "name": "C",
+        "link": "https://huggingface.co/datasets/org/c",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "0",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "100",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": false,
+        "large": [
+          {
+            "id": "b",
+            "name": "B",
+            "size": "97",
+            "share_percent": "97.0000"
+          }
+        ]
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": "below_1b_tokens",
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [
+            {
+              "name": "B",
+              "link": "https://huggingface.co/datasets/org/b",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            }
+          ],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ],
+      "data_sources.public_datasets.other_datasets_description": [
+        "Publicly available datasets not listed as large: A, C."
+      ]
+    }
+  },
+  {
+    "name": "just-over",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "31",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "969",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "1000",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": false,
+        "large": [
+          {
+            "id": "b",
+            "name": "B",
+            "size": "969",
+            "share_percent": "96.9000"
+          },
+          {
+            "id": "a",
+            "name": "A",
+            "size": "31",
+            "share_percent": "3.1000"
+          }
+        ]
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": "below_1b_tokens",
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [
+            {
+              "name": "A",
+              "link": "https://huggingface.co/datasets/org/a",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            },
+            {
+              "name": "B",
+              "link": "https://huggingface.co/datasets/org/b",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            }
+          ],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ]
+    }
+  },
+  {
+    "name": "multi-modality",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "10",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          },
+          {
+            "modality": "image",
+            "value": "900",
+            "unit": "images",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "990",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "c",
+        "name": "C",
+        "link": "https://huggingface.co/datasets/org/c",
+        "category": "public",
+        "modalities": [
+          "image"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "image",
+            "value": "100",
+            "unit": "images",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "image",
+        "unit": "images",
+        "total": "1000",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": false,
+        "large": [
+          {
+            "id": "a",
+            "name": "A",
+            "size": "900",
+            "share_percent": "90.0000"
+          },
+          {
+            "id": "c",
+            "name": "C",
+            "size": "100",
+            "share_percent": "10.0000"
+          }
+        ]
+      },
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "1000",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": false,
+        "large": [
+          {
+            "id": "b",
+            "name": "B",
+            "size": "990",
+            "share_percent": "99.0000"
+          }
+        ]
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": "below_1b_tokens",
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": true,
+            "size_range": "below_1m_images",
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text",
+              "image"
+            ],
+            "other": ""
+          },
+          "large_datasets": [
+            {
+              "name": "A",
+              "link": "https://huggingface.co/datasets/org/a",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            },
+            {
+              "name": "B",
+              "link": "https://huggingface.co/datasets/org/b",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            },
+            {
+              "name": "C",
+              "link": "https://huggingface.co/datasets/org/c",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            }
+          ],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ]
+    }
+  },
+  {
+    "name": "missing-size",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "10",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "10",
+        "determined": false,
+        "missing": [
+          "b"
+        ],
+        "before_preprocessing": false,
+        "large": []
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": null,
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.modalities.text.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ],
+      "data_sources.public_datasets.large_datasets": [
+        "Large datasets for text could not be determined: sizes are missing or in different units for b."
+      ],
+      "data_sources.public_datasets.other_datasets_description": [
+        "Publicly available datasets not listed as large: A, B."
+      ]
+    }
+  },
+  {
+    "name": "unit-mismatch",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "10",
+            "unit": "bytes",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "10",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": null,
+        "total": "20",
+        "determined": false,
+        "missing": [
+          "a",
+          "b"
+        ],
+        "before_preprocessing": false,
+        "large": []
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": null,
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.modalities.text.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ],
+      "data_sources.public_datasets.large_datasets": [
+        "Large datasets for text could not be determined: sizes are missing or in different units for a, b."
+      ],
+      "data_sources.public_datasets.other_datasets_description": [
+        "Publicly available datasets not listed as large: A, B."
+      ]
+    }
+  },
+  {
+    "name": "categories",
+    "datasets": [
+      {
+        "id": "pub",
+        "name": "PUB",
+        "link": "https://huggingface.co/datasets/org/pub",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "5000000000",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "lic",
+        "name": "LIC",
+        "link": "https://huggingface.co/datasets/org/lic",
+        "category": "licensed",
+        "modalities": [
+          "text",
+          "audio"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "priv",
+        "name": "PRIV",
+        "link": "https://huggingface.co/datasets/org/priv",
+        "category": "private",
+        "modalities": [
+          "image"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": true,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "priv2",
+        "name": "PRIV2",
+        "link": "https://huggingface.co/datasets/org/priv2",
+        "category": "private",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "syn",
+        "name": "SYN",
+        "link": "https://huggingface.co/datasets/org/syn",
+        "category": "synthetic",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "oth",
+        "name": "OTH",
+        "link": "https://huggingface.co/datasets/org/oth",
+        "category": "other",
+        "modalities": [
+          "video"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "none",
+        "name": "NONE",
+        "link": "https://huggingface.co/datasets/org/none",
+        "category": null,
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "5000000000",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": false,
+        "large": [
+          {
+            "id": "pub",
+            "name": "PUB",
+            "size": "5000000000",
+            "share_percent": "100.0000"
+          }
+        ]
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": null,
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": true,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": true,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": true,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [
+            {
+              "name": "PUB",
+              "link": "https://huggingface.co/datasets/org/pub",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            }
+          ],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": true,
+          "modalities": {
+            "selected": [
+              "text",
+              "audio"
+            ],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": true,
+          "modalities": {
+            "selected": [
+              "text",
+              "image"
+            ],
+            "other": ""
+          },
+          "publicly_known_datasets": [
+            {
+              "name": "PRIV",
+              "link": "https://huggingface.co/datasets/org/priv"
+            }
+          ],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": true,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.modalities.text.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.modalities.image.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.modalities.audio.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.modalities.video.size_range": [
+        "The inventory has no complete size in the template unit for this modality; estimate the range."
+      ],
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ],
+      "data_sources.other_private_datasets.non_publicly_known_description": [
+        "Private datasets not marked as publicly known: 1."
+      ],
+      "data_sources.synthetic_data.market_models": [
+        "Synthetic datasets in the inventory: SYN. Name the models used to generate them."
+      ],
+      "data_sources.other_sources.description": [
+        "Other datasets in the inventory: OTH."
+      ],
+      "data_sources": [
+        "Datasets without a category (assign each to one Section of the template): NONE."
+      ]
+    }
+  },
+  {
+    "name": "before-preprocessing",
+    "datasets": [
+      {
+        "id": "a",
+        "name": "A",
+        "link": "https://huggingface.co/datasets/org/a",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "50",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": false
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "link": "https://huggingface.co/datasets/org/b",
+        "category": "public",
+        "modalities": [
+          "text"
+        ],
+        "languages": [
+          "en"
+        ],
+        "licenses": [],
+        "sizes": [
+          {
+            "modality": "text",
+            "value": "50",
+            "unit": "tokens",
+            "basis": "test",
+            "after_preprocessing": true
+          }
+        ],
+        "collection_period": {
+          "start": null,
+          "end": null
+        },
+        "publicly_known": null,
+        "source": {
+          "kind": "test",
+          "reference": "test",
+          "revision": null
+        },
+        "notes": []
+      }
+    ],
+    "large": [
+      {
+        "modality": "text",
+        "unit": "tokens",
+        "total": "100",
+        "determined": true,
+        "missing": [],
+        "before_preprocessing": true,
+        "large": [
+          {
+            "id": "a",
+            "name": "A",
+            "size": "50",
+            "share_percent": "50.0000"
+          },
+          {
+            "id": "b",
+            "name": "B",
+            "size": "50",
+            "share_percent": "50.0000"
+          }
+        ]
+      }
+    ],
+    "prefill": {
+      "sourcebook": 1,
+      "summary_version": {
+        "version": "",
+        "previous_versions": []
+      },
+      "last_update": null,
+      "general_information": {
+        "provider": {
+          "name_and_contact_details": "",
+          "authorised_representative": {
+            "applicable": null,
+            "name_and_contact_details": "",
+            "not_applicable_reason": null
+          }
+        },
+        "model": {
+          "versioned_model_names": [],
+          "model_dependencies": {
+            "is_modification": null,
+            "models": []
+          },
+          "placement_dates": []
+        },
+        "modalities": {
+          "text": {
+            "present": true,
+            "size_range": "below_1b_tokens",
+            "size_other_unit": "",
+            "types_of_content": ""
+          },
+          "image": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "audio": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "video": {
+            "present": null,
+            "size_range": null,
+            "types_of_content": ""
+          },
+          "other": []
+        },
+        "latest_data_collection": {
+          "date": null,
+          "continuous_training": null
+        },
+        "linguistic_characteristics": "",
+        "other_characteristics": "",
+        "additional_comments": ""
+      },
+      "data_sources": {
+        "public_datasets": {
+          "used": true,
+          "modalities": {
+            "selected": [
+              "text"
+            ],
+            "other": ""
+          },
+          "large_datasets": [
+            {
+              "name": "A",
+              "link": "https://huggingface.co/datasets/org/a",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            },
+            {
+              "name": "B",
+              "link": "https://huggingface.co/datasets/org/b",
+              "description": "",
+              "collection_period": {
+                "start": null,
+                "end": null
+              },
+              "selection_approach": ""
+            }
+          ],
+          "other_datasets_description": "",
+          "additional_comments": ""
+        },
+        "licensed_datasets": {
+          "concluded": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          }
+        },
+        "other_private_datasets": {
+          "obtained": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "publicly_known_datasets": [],
+          "non_publicly_known_description": "",
+          "additional_comments": ""
+        },
+        "crawled_data": {
+          "crawlers_used": null,
+          "crawler_names": [],
+          "purposes": "",
+          "crawler_behaviour": "",
+          "collection_period": {
+            "from": null,
+            "to": null
+          },
+          "content_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "top_domains": {
+            "domains": [],
+            "access_information": ""
+          },
+          "additional_comments": ""
+        },
+        "user_data": {
+          "from_model_interactions": null,
+          "from_other_services": null,
+          "services_description": "",
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "additional_comments": ""
+        },
+        "synthetic_data": {
+          "created": null,
+          "modalities": {
+            "selected": [],
+            "other": ""
+          },
+          "market_models": [],
+          "other_models_information": "",
+          "additional_comments": ""
+        },
+        "other_sources": {
+          "used": null,
+          "description": "",
+          "additional_comments": ""
+        }
+      },
+      "data_processing": {
+        "tdm_reservations": {
+          "code_of_practice_signatory": null,
+          "measures": "",
+          "additional_comments": ""
+        },
+        "illegal_content": {
+          "measures": ""
+        },
+        "other_information": ""
+      },
+      "information_gaps": []
+    },
+    "hints": {
+      "general_information.linguistic_characteristics": [
+        "Languages listed in dataset metadata: en."
+      ],
+      "data_sources.public_datasets.large_datasets": [
+        "Some text sizes were not measured after pre-processing; the template asks for sizes after pre-processing."
+      ]
+    }
+  }
+]

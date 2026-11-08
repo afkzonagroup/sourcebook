@@ -1,0 +1,2485 @@
+[
+  {
+    "name": "top-10-percent-rounds-up",
+    "options": {},
+    "records": [
+      {
+        "url": "https://www.site00.com/",
+        "size": "1000"
+      },
+      {
+        "url": "https://www.site01.com/",
+        "size": "990"
+      },
+      {
+        "url": "https://www.site02.com/",
+        "size": "980"
+      },
+      {
+        "url": "https://www.site03.com/",
+        "size": "970"
+      },
+      {
+        "url": "https://www.site04.com/",
+        "size": "960"
+      },
+      {
+        "url": "https://www.site05.com/",
+        "size": "950"
+      },
+      {
+        "url": "https://www.site06.com/",
+        "size": "940"
+      },
+      {
+        "url": "https://www.site07.com/",
+        "size": "930"
+      },
+      {
+        "url": "https://www.site08.com/",
+        "size": "920"
+      },
+      {
+        "url": "https://www.site09.com/",
+        "size": "910"
+      },
+      {
+        "url": "https://www.site10.com/",
+        "size": "900"
+      },
+      {
+        "url": "https://www.site11.com/",
+        "size": "890"
+      },
+      {
+        "url": "https://www.site12.com/",
+        "size": "880"
+      },
+      {
+        "url": "https://www.site13.com/",
+        "size": "870"
+      },
+      {
+        "url": "https://www.site14.com/",
+        "size": "860"
+      },
+      {
+        "url": "https://www.site15.com/",
+        "size": "850"
+      },
+      {
+        "url": "https://www.site16.com/",
+        "size": "840"
+      },
+      {
+        "url": "https://www.site17.com/",
+        "size": "830"
+      },
+      {
+        "url": "https://www.site18.com/",
+        "size": "820"
+      },
+      {
+        "url": "https://www.site19.com/",
+        "size": "810"
+      },
+      {
+        "url": "https://www.site20.com/",
+        "size": "800"
+      },
+      {
+        "url": "https://www.site21.com/",
+        "size": "790"
+      },
+      {
+        "url": "https://www.site22.com/",
+        "size": "780"
+      },
+      {
+        "url": "https://www.site23.com/",
+        "size": "770"
+      },
+      {
+        "url": "https://www.site24.com/",
+        "size": "760"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 25,
+        "counted": 25,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 25,
+        "size": "22000"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 25,
+          "size": "22000",
+          "required": 3,
+          "cutoff_size": "980",
+          "selected": 3
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "site00.com",
+          "size": "1000",
+          "share_percent": "4.5454",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "site01.com",
+          "size": "990",
+          "share_percent": "4.5000",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "site02.com",
+          "size": "980",
+          "share_percent": "4.4545",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "ties-included-at-cutoff",
+    "options": {},
+    "records": [
+      {
+        "url": "https://a.org/",
+        "size": "100"
+      },
+      {
+        "url": "https://b.org/",
+        "size": "50"
+      },
+      {
+        "url": "https://c.org/",
+        "size": "50"
+      },
+      {
+        "url": "https://filler0.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler1.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler2.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler3.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler4.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler5.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler6.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler7.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler8.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler9.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler10.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler11.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler12.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler13.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler14.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler15.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler16.org/",
+        "size": "10"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 20,
+        "counted": 20,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 20,
+        "size": "370"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 20,
+          "size": "370",
+          "required": 2,
+          "cutoff_size": "50",
+          "selected": 3
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "a.org",
+          "size": "100",
+          "share_percent": "27.0270",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "b.org",
+          "size": "50",
+          "share_percent": "13.5135",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "c.org",
+          "size": "50",
+          "share_percent": "13.5135",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "ties-cut-alphabetical",
+    "options": {
+      "ties": "cut"
+    },
+    "records": [
+      {
+        "url": "https://a.org/",
+        "size": "100"
+      },
+      {
+        "url": "https://c.org/",
+        "size": "50"
+      },
+      {
+        "url": "https://b.org/",
+        "size": "50"
+      },
+      {
+        "url": "https://filler0.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler1.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler2.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler3.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler4.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler5.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler6.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler7.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler8.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler9.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler10.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler11.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler12.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler13.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler14.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler15.org/",
+        "size": "10"
+      },
+      {
+        "url": "https://filler16.org/",
+        "size": "10"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "cut",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 20,
+        "counted": 20,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 20,
+        "size": "370"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 20,
+          "size": "370",
+          "required": 2,
+          "cutoff_size": "50",
+          "selected": 2
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "a.org",
+          "size": "100",
+          "share_percent": "27.0270",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "b.org",
+          "size": "50",
+          "share_percent": "13.5135",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "all-tied",
+    "options": {},
+    "records": [
+      {
+        "url": "https://same0.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same1.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same2.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same3.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same4.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same5.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same6.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same7.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same8.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same9.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same10.net/",
+        "size": "7"
+      },
+      {
+        "url": "https://same11.net/",
+        "size": "7"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 12,
+        "counted": 12,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 12,
+        "size": "84"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 12,
+          "size": "84",
+          "required": 2,
+          "cutoff_size": "7",
+          "selected": 12
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "same0.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "same1.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "same10.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 4,
+          "domain": "same11.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 5,
+          "domain": "same2.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 6,
+          "domain": "same3.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 7,
+          "domain": "same4.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 8,
+          "domain": "same5.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 9,
+          "domain": "same6.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 10,
+          "domain": "same7.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 11,
+          "domain": "same8.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 12,
+          "domain": "same9.net",
+          "size": "7",
+          "share_percent": "8.3333",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "sme-five-percent",
+    "options": {
+      "sme": true
+    },
+    "records": [
+      {
+        "url": "https://d000.eu/",
+        "size": "10000"
+      },
+      {
+        "url": "https://d001.eu/",
+        "size": "9999"
+      },
+      {
+        "url": "https://d002.eu/",
+        "size": "9998"
+      },
+      {
+        "url": "https://d003.eu/",
+        "size": "9997"
+      },
+      {
+        "url": "https://d004.eu/",
+        "size": "9996"
+      },
+      {
+        "url": "https://d005.eu/",
+        "size": "9995"
+      },
+      {
+        "url": "https://d006.eu/",
+        "size": "9994"
+      },
+      {
+        "url": "https://d007.eu/",
+        "size": "9993"
+      },
+      {
+        "url": "https://d008.eu/",
+        "size": "9992"
+      },
+      {
+        "url": "https://d009.eu/",
+        "size": "9991"
+      },
+      {
+        "url": "https://d010.eu/",
+        "size": "9990"
+      },
+      {
+        "url": "https://d011.eu/",
+        "size": "9989"
+      },
+      {
+        "url": "https://d012.eu/",
+        "size": "9988"
+      },
+      {
+        "url": "https://d013.eu/",
+        "size": "9987"
+      },
+      {
+        "url": "https://d014.eu/",
+        "size": "9986"
+      },
+      {
+        "url": "https://d015.eu/",
+        "size": "9985"
+      },
+      {
+        "url": "https://d016.eu/",
+        "size": "9984"
+      },
+      {
+        "url": "https://d017.eu/",
+        "size": "9983"
+      },
+      {
+        "url": "https://d018.eu/",
+        "size": "9982"
+      },
+      {
+        "url": "https://d019.eu/",
+        "size": "9981"
+      },
+      {
+        "url": "https://d020.eu/",
+        "size": "9980"
+      },
+      {
+        "url": "https://d021.eu/",
+        "size": "9979"
+      },
+      {
+        "url": "https://d022.eu/",
+        "size": "9978"
+      },
+      {
+        "url": "https://d023.eu/",
+        "size": "9977"
+      },
+      {
+        "url": "https://d024.eu/",
+        "size": "9976"
+      },
+      {
+        "url": "https://d025.eu/",
+        "size": "9975"
+      },
+      {
+        "url": "https://d026.eu/",
+        "size": "9974"
+      },
+      {
+        "url": "https://d027.eu/",
+        "size": "9973"
+      },
+      {
+        "url": "https://d028.eu/",
+        "size": "9972"
+      },
+      {
+        "url": "https://d029.eu/",
+        "size": "9971"
+      },
+      {
+        "url": "https://d030.eu/",
+        "size": "9970"
+      },
+      {
+        "url": "https://d031.eu/",
+        "size": "9969"
+      },
+      {
+        "url": "https://d032.eu/",
+        "size": "9968"
+      },
+      {
+        "url": "https://d033.eu/",
+        "size": "9967"
+      },
+      {
+        "url": "https://d034.eu/",
+        "size": "9966"
+      },
+      {
+        "url": "https://d035.eu/",
+        "size": "9965"
+      },
+      {
+        "url": "https://d036.eu/",
+        "size": "9964"
+      },
+      {
+        "url": "https://d037.eu/",
+        "size": "9963"
+      },
+      {
+        "url": "https://d038.eu/",
+        "size": "9962"
+      },
+      {
+        "url": "https://d039.eu/",
+        "size": "9961"
+      },
+      {
+        "url": "https://d040.eu/",
+        "size": "9960"
+      },
+      {
+        "url": "https://d041.eu/",
+        "size": "9959"
+      },
+      {
+        "url": "https://d042.eu/",
+        "size": "9958"
+      },
+      {
+        "url": "https://d043.eu/",
+        "size": "9957"
+      },
+      {
+        "url": "https://d044.eu/",
+        "size": "9956"
+      },
+      {
+        "url": "https://d045.eu/",
+        "size": "9955"
+      },
+      {
+        "url": "https://d046.eu/",
+        "size": "9954"
+      },
+      {
+        "url": "https://d047.eu/",
+        "size": "9953"
+      },
+      {
+        "url": "https://d048.eu/",
+        "size": "9952"
+      },
+      {
+        "url": "https://d049.eu/",
+        "size": "9951"
+      },
+      {
+        "url": "https://d050.eu/",
+        "size": "9950"
+      },
+      {
+        "url": "https://d051.eu/",
+        "size": "9949"
+      },
+      {
+        "url": "https://d052.eu/",
+        "size": "9948"
+      },
+      {
+        "url": "https://d053.eu/",
+        "size": "9947"
+      },
+      {
+        "url": "https://d054.eu/",
+        "size": "9946"
+      },
+      {
+        "url": "https://d055.eu/",
+        "size": "9945"
+      },
+      {
+        "url": "https://d056.eu/",
+        "size": "9944"
+      },
+      {
+        "url": "https://d057.eu/",
+        "size": "9943"
+      },
+      {
+        "url": "https://d058.eu/",
+        "size": "9942"
+      },
+      {
+        "url": "https://d059.eu/",
+        "size": "9941"
+      },
+      {
+        "url": "https://d060.eu/",
+        "size": "9940"
+      },
+      {
+        "url": "https://d061.eu/",
+        "size": "9939"
+      },
+      {
+        "url": "https://d062.eu/",
+        "size": "9938"
+      },
+      {
+        "url": "https://d063.eu/",
+        "size": "9937"
+      },
+      {
+        "url": "https://d064.eu/",
+        "size": "9936"
+      },
+      {
+        "url": "https://d065.eu/",
+        "size": "9935"
+      },
+      {
+        "url": "https://d066.eu/",
+        "size": "9934"
+      },
+      {
+        "url": "https://d067.eu/",
+        "size": "9933"
+      },
+      {
+        "url": "https://d068.eu/",
+        "size": "9932"
+      },
+      {
+        "url": "https://d069.eu/",
+        "size": "9931"
+      },
+      {
+        "url": "https://d070.eu/",
+        "size": "9930"
+      },
+      {
+        "url": "https://d071.eu/",
+        "size": "9929"
+      },
+      {
+        "url": "https://d072.eu/",
+        "size": "9928"
+      },
+      {
+        "url": "https://d073.eu/",
+        "size": "9927"
+      },
+      {
+        "url": "https://d074.eu/",
+        "size": "9926"
+      },
+      {
+        "url": "https://d075.eu/",
+        "size": "9925"
+      },
+      {
+        "url": "https://d076.eu/",
+        "size": "9924"
+      },
+      {
+        "url": "https://d077.eu/",
+        "size": "9923"
+      },
+      {
+        "url": "https://d078.eu/",
+        "size": "9922"
+      },
+      {
+        "url": "https://d079.eu/",
+        "size": "9921"
+      },
+      {
+        "url": "https://d080.eu/",
+        "size": "9920"
+      },
+      {
+        "url": "https://d081.eu/",
+        "size": "9919"
+      },
+      {
+        "url": "https://d082.eu/",
+        "size": "9918"
+      },
+      {
+        "url": "https://d083.eu/",
+        "size": "9917"
+      },
+      {
+        "url": "https://d084.eu/",
+        "size": "9916"
+      },
+      {
+        "url": "https://d085.eu/",
+        "size": "9915"
+      },
+      {
+        "url": "https://d086.eu/",
+        "size": "9914"
+      },
+      {
+        "url": "https://d087.eu/",
+        "size": "9913"
+      },
+      {
+        "url": "https://d088.eu/",
+        "size": "9912"
+      },
+      {
+        "url": "https://d089.eu/",
+        "size": "9911"
+      },
+      {
+        "url": "https://d090.eu/",
+        "size": "9910"
+      },
+      {
+        "url": "https://d091.eu/",
+        "size": "9909"
+      },
+      {
+        "url": "https://d092.eu/",
+        "size": "9908"
+      },
+      {
+        "url": "https://d093.eu/",
+        "size": "9907"
+      },
+      {
+        "url": "https://d094.eu/",
+        "size": "9906"
+      },
+      {
+        "url": "https://d095.eu/",
+        "size": "9905"
+      },
+      {
+        "url": "https://d096.eu/",
+        "size": "9904"
+      },
+      {
+        "url": "https://d097.eu/",
+        "size": "9903"
+      },
+      {
+        "url": "https://d098.eu/",
+        "size": "9902"
+      },
+      {
+        "url": "https://d099.eu/",
+        "size": "9901"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "sme-top-5-percent-or-1000",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 100,
+        "counted": 100,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 100,
+        "size": "995050"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 100,
+          "size": "995050",
+          "required": 5,
+          "cutoff_size": "9996",
+          "selected": 5
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "d000.eu",
+          "size": "10000",
+          "share_percent": "1.0049",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "d001.eu",
+          "size": "9999",
+          "share_percent": "1.0048",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "d002.eu",
+          "size": "9998",
+          "share_percent": "1.0047",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 4,
+          "domain": "d003.eu",
+          "size": "9997",
+          "share_percent": "1.0046",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 5,
+          "domain": "d004.eu",
+          "size": "9996",
+          "share_percent": "1.0045",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "not-sme-same-input",
+    "options": {
+      "sme": false
+    },
+    "records": [
+      {
+        "url": "https://d000.eu/",
+        "size": "10000"
+      },
+      {
+        "url": "https://d001.eu/",
+        "size": "9999"
+      },
+      {
+        "url": "https://d002.eu/",
+        "size": "9998"
+      },
+      {
+        "url": "https://d003.eu/",
+        "size": "9997"
+      },
+      {
+        "url": "https://d004.eu/",
+        "size": "9996"
+      },
+      {
+        "url": "https://d005.eu/",
+        "size": "9995"
+      },
+      {
+        "url": "https://d006.eu/",
+        "size": "9994"
+      },
+      {
+        "url": "https://d007.eu/",
+        "size": "9993"
+      },
+      {
+        "url": "https://d008.eu/",
+        "size": "9992"
+      },
+      {
+        "url": "https://d009.eu/",
+        "size": "9991"
+      },
+      {
+        "url": "https://d010.eu/",
+        "size": "9990"
+      },
+      {
+        "url": "https://d011.eu/",
+        "size": "9989"
+      },
+      {
+        "url": "https://d012.eu/",
+        "size": "9988"
+      },
+      {
+        "url": "https://d013.eu/",
+        "size": "9987"
+      },
+      {
+        "url": "https://d014.eu/",
+        "size": "9986"
+      },
+      {
+        "url": "https://d015.eu/",
+        "size": "9985"
+      },
+      {
+        "url": "https://d016.eu/",
+        "size": "9984"
+      },
+      {
+        "url": "https://d017.eu/",
+        "size": "9983"
+      },
+      {
+        "url": "https://d018.eu/",
+        "size": "9982"
+      },
+      {
+        "url": "https://d019.eu/",
+        "size": "9981"
+      },
+      {
+        "url": "https://d020.eu/",
+        "size": "9980"
+      },
+      {
+        "url": "https://d021.eu/",
+        "size": "9979"
+      },
+      {
+        "url": "https://d022.eu/",
+        "size": "9978"
+      },
+      {
+        "url": "https://d023.eu/",
+        "size": "9977"
+      },
+      {
+        "url": "https://d024.eu/",
+        "size": "9976"
+      },
+      {
+        "url": "https://d025.eu/",
+        "size": "9975"
+      },
+      {
+        "url": "https://d026.eu/",
+        "size": "9974"
+      },
+      {
+        "url": "https://d027.eu/",
+        "size": "9973"
+      },
+      {
+        "url": "https://d028.eu/",
+        "size": "9972"
+      },
+      {
+        "url": "https://d029.eu/",
+        "size": "9971"
+      },
+      {
+        "url": "https://d030.eu/",
+        "size": "9970"
+      },
+      {
+        "url": "https://d031.eu/",
+        "size": "9969"
+      },
+      {
+        "url": "https://d032.eu/",
+        "size": "9968"
+      },
+      {
+        "url": "https://d033.eu/",
+        "size": "9967"
+      },
+      {
+        "url": "https://d034.eu/",
+        "size": "9966"
+      },
+      {
+        "url": "https://d035.eu/",
+        "size": "9965"
+      },
+      {
+        "url": "https://d036.eu/",
+        "size": "9964"
+      },
+      {
+        "url": "https://d037.eu/",
+        "size": "9963"
+      },
+      {
+        "url": "https://d038.eu/",
+        "size": "9962"
+      },
+      {
+        "url": "https://d039.eu/",
+        "size": "9961"
+      },
+      {
+        "url": "https://d040.eu/",
+        "size": "9960"
+      },
+      {
+        "url": "https://d041.eu/",
+        "size": "9959"
+      },
+      {
+        "url": "https://d042.eu/",
+        "size": "9958"
+      },
+      {
+        "url": "https://d043.eu/",
+        "size": "9957"
+      },
+      {
+        "url": "https://d044.eu/",
+        "size": "9956"
+      },
+      {
+        "url": "https://d045.eu/",
+        "size": "9955"
+      },
+      {
+        "url": "https://d046.eu/",
+        "size": "9954"
+      },
+      {
+        "url": "https://d047.eu/",
+        "size": "9953"
+      },
+      {
+        "url": "https://d048.eu/",
+        "size": "9952"
+      },
+      {
+        "url": "https://d049.eu/",
+        "size": "9951"
+      },
+      {
+        "url": "https://d050.eu/",
+        "size": "9950"
+      },
+      {
+        "url": "https://d051.eu/",
+        "size": "9949"
+      },
+      {
+        "url": "https://d052.eu/",
+        "size": "9948"
+      },
+      {
+        "url": "https://d053.eu/",
+        "size": "9947"
+      },
+      {
+        "url": "https://d054.eu/",
+        "size": "9946"
+      },
+      {
+        "url": "https://d055.eu/",
+        "size": "9945"
+      },
+      {
+        "url": "https://d056.eu/",
+        "size": "9944"
+      },
+      {
+        "url": "https://d057.eu/",
+        "size": "9943"
+      },
+      {
+        "url": "https://d058.eu/",
+        "size": "9942"
+      },
+      {
+        "url": "https://d059.eu/",
+        "size": "9941"
+      },
+      {
+        "url": "https://d060.eu/",
+        "size": "9940"
+      },
+      {
+        "url": "https://d061.eu/",
+        "size": "9939"
+      },
+      {
+        "url": "https://d062.eu/",
+        "size": "9938"
+      },
+      {
+        "url": "https://d063.eu/",
+        "size": "9937"
+      },
+      {
+        "url": "https://d064.eu/",
+        "size": "9936"
+      },
+      {
+        "url": "https://d065.eu/",
+        "size": "9935"
+      },
+      {
+        "url": "https://d066.eu/",
+        "size": "9934"
+      },
+      {
+        "url": "https://d067.eu/",
+        "size": "9933"
+      },
+      {
+        "url": "https://d068.eu/",
+        "size": "9932"
+      },
+      {
+        "url": "https://d069.eu/",
+        "size": "9931"
+      },
+      {
+        "url": "https://d070.eu/",
+        "size": "9930"
+      },
+      {
+        "url": "https://d071.eu/",
+        "size": "9929"
+      },
+      {
+        "url": "https://d072.eu/",
+        "size": "9928"
+      },
+      {
+        "url": "https://d073.eu/",
+        "size": "9927"
+      },
+      {
+        "url": "https://d074.eu/",
+        "size": "9926"
+      },
+      {
+        "url": "https://d075.eu/",
+        "size": "9925"
+      },
+      {
+        "url": "https://d076.eu/",
+        "size": "9924"
+      },
+      {
+        "url": "https://d077.eu/",
+        "size": "9923"
+      },
+      {
+        "url": "https://d078.eu/",
+        "size": "9922"
+      },
+      {
+        "url": "https://d079.eu/",
+        "size": "9921"
+      },
+      {
+        "url": "https://d080.eu/",
+        "size": "9920"
+      },
+      {
+        "url": "https://d081.eu/",
+        "size": "9919"
+      },
+      {
+        "url": "https://d082.eu/",
+        "size": "9918"
+      },
+      {
+        "url": "https://d083.eu/",
+        "size": "9917"
+      },
+      {
+        "url": "https://d084.eu/",
+        "size": "9916"
+      },
+      {
+        "url": "https://d085.eu/",
+        "size": "9915"
+      },
+      {
+        "url": "https://d086.eu/",
+        "size": "9914"
+      },
+      {
+        "url": "https://d087.eu/",
+        "size": "9913"
+      },
+      {
+        "url": "https://d088.eu/",
+        "size": "9912"
+      },
+      {
+        "url": "https://d089.eu/",
+        "size": "9911"
+      },
+      {
+        "url": "https://d090.eu/",
+        "size": "9910"
+      },
+      {
+        "url": "https://d091.eu/",
+        "size": "9909"
+      },
+      {
+        "url": "https://d092.eu/",
+        "size": "9908"
+      },
+      {
+        "url": "https://d093.eu/",
+        "size": "9907"
+      },
+      {
+        "url": "https://d094.eu/",
+        "size": "9906"
+      },
+      {
+        "url": "https://d095.eu/",
+        "size": "9905"
+      },
+      {
+        "url": "https://d096.eu/",
+        "size": "9904"
+      },
+      {
+        "url": "https://d097.eu/",
+        "size": "9903"
+      },
+      {
+        "url": "https://d098.eu/",
+        "size": "9902"
+      },
+      {
+        "url": "https://d099.eu/",
+        "size": "9901"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 100,
+        "counted": 100,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 100,
+        "size": "995050"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 100,
+          "size": "995050",
+          "required": 10,
+          "cutoff_size": "9991",
+          "selected": 10
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "d000.eu",
+          "size": "10000",
+          "share_percent": "1.0049",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "d001.eu",
+          "size": "9999",
+          "share_percent": "1.0048",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "d002.eu",
+          "size": "9998",
+          "share_percent": "1.0047",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 4,
+          "domain": "d003.eu",
+          "size": "9997",
+          "share_percent": "1.0046",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 5,
+          "domain": "d004.eu",
+          "size": "9996",
+          "share_percent": "1.0045",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 6,
+          "domain": "d005.eu",
+          "size": "9995",
+          "share_percent": "1.0044",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 7,
+          "domain": "d006.eu",
+          "size": "9994",
+          "share_percent": "1.0043",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 8,
+          "domain": "d007.eu",
+          "size": "9993",
+          "share_percent": "1.0042",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 9,
+          "domain": "d008.eu",
+          "size": "9992",
+          "share_percent": "1.0041",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        },
+        {
+          "rank": 10,
+          "domain": "d009.eu",
+          "size": "9991",
+          "share_percent": "1.0040",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "registrable-domain-grouping",
+    "options": {},
+    "records": [
+      {
+        "url": "https://news.bbc.co.uk/1",
+        "size": "300"
+      },
+      {
+        "url": "https://www.bbc.co.uk/2",
+        "size": "300"
+      },
+      {
+        "url": "https://bbc.co.uk/3",
+        "size": "1"
+      },
+      {
+        "url": "https://alice.github.io/a",
+        "size": "500"
+      },
+      {
+        "url": "https://bob.github.io/b",
+        "size": "500"
+      },
+      {
+        "url": "https://www.gov.uk/x",
+        "size": "50"
+      },
+      {
+        "url": "https://bücher.de/x",
+        "size": "40"
+      },
+      {
+        "url": "https://xn--bcher-kva.de/y",
+        "size": "40"
+      },
+      {
+        "url": "https://192.168.1.1/",
+        "size": "9999"
+      },
+      {
+        "url": "https://[2001:db8::1]/",
+        "size": "9999"
+      },
+      {
+        "url": "ftp://files.example.com/a",
+        "size": "9999"
+      },
+      {
+        "url": "not a url",
+        "size": "9999"
+      },
+      {
+        "url": "https://co.uk/",
+        "size": "9999"
+      },
+      {
+        "url": "https://zero.example/",
+        "size": "0"
+      },
+      {
+        "url": "https://small0.example/",
+        "size": "5"
+      },
+      {
+        "url": "https://small1.example/",
+        "size": "5"
+      },
+      {
+        "url": "https://small2.example/",
+        "size": "5"
+      },
+      {
+        "url": "https://small3.example/",
+        "size": "5"
+      },
+      {
+        "url": "https://small4.example/",
+        "size": "5"
+      },
+      {
+        "url": "https://small5.example/",
+        "size": "5"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 20,
+        "counted": 14,
+        "skipped": {
+          "invalid_url": 1,
+          "not_http": 1,
+          "ip_address": 2,
+          "invalid_host": 0,
+          "public_suffix_only": 1,
+          "zero_size": 1
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 10,
+        "size": "1761"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 10,
+          "size": "1761",
+          "required": 1,
+          "cutoff_size": "1000",
+          "selected": 1
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "github.io",
+          "size": "1000",
+          "share_percent": "56.7859",
+          "records": 2,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "private-suffixes-split-owners",
+    "options": {
+      "includePrivateSuffixes": true
+    },
+    "records": [
+      {
+        "url": "https://alice.github.io/a",
+        "size": "500"
+      },
+      {
+        "url": "https://bob.github.io/b",
+        "size": "400"
+      },
+      {
+        "url": "https://www.example.com/",
+        "size": "100"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": true,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 3,
+        "counted": 3,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 3,
+        "size": "1000"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 3,
+          "size": "1000",
+          "required": 1,
+          "cutoff_size": "500",
+          "selected": 1
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "alice.github.io",
+          "size": "500",
+          "share_percent": "50.0000",
+          "records": 1,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "per-modality-union",
+    "options": {
+      "modalityMode": "per-modality"
+    },
+    "records": [
+      {
+        "url": "https://text0.org/",
+        "size": "1000",
+        "modality": "text"
+      },
+      {
+        "url": "https://text1.org/",
+        "size": "999",
+        "modality": "text"
+      },
+      {
+        "url": "https://text2.org/",
+        "size": "998",
+        "modality": "text"
+      },
+      {
+        "url": "https://text3.org/",
+        "size": "997",
+        "modality": "text"
+      },
+      {
+        "url": "https://text4.org/",
+        "size": "996",
+        "modality": "text"
+      },
+      {
+        "url": "https://text5.org/",
+        "size": "995",
+        "modality": "text"
+      },
+      {
+        "url": "https://text6.org/",
+        "size": "994",
+        "modality": "text"
+      },
+      {
+        "url": "https://text7.org/",
+        "size": "993",
+        "modality": "text"
+      },
+      {
+        "url": "https://text8.org/",
+        "size": "992",
+        "modality": "text"
+      },
+      {
+        "url": "https://text9.org/",
+        "size": "991",
+        "modality": "text"
+      },
+      {
+        "url": "https://img0.org/",
+        "size": "10",
+        "modality": "image"
+      },
+      {
+        "url": "https://img1.org/",
+        "size": "9",
+        "modality": "image"
+      },
+      {
+        "url": "https://img2.org/",
+        "size": "8",
+        "modality": "image"
+      },
+      {
+        "url": "https://img3.org/",
+        "size": "7",
+        "modality": "image"
+      },
+      {
+        "url": "https://img4.org/",
+        "size": "6",
+        "modality": "image"
+      },
+      {
+        "url": "https://img5.org/",
+        "size": "5",
+        "modality": "image"
+      },
+      {
+        "url": "https://img6.org/",
+        "size": "4",
+        "modality": "image"
+      },
+      {
+        "url": "https://img7.org/",
+        "size": "3",
+        "modality": "image"
+      },
+      {
+        "url": "https://img8.org/",
+        "size": "2",
+        "modality": "image"
+      },
+      {
+        "url": "https://img9.org/",
+        "size": "1",
+        "modality": "image"
+      },
+      {
+        "url": "https://text0.org/pic",
+        "size": "3",
+        "modality": "image"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "per-modality",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 21,
+        "counted": 21,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 20,
+        "size": "10013"
+      },
+      "groups": [
+        {
+          "modality": "image",
+          "domains": 11,
+          "size": "58",
+          "required": 2,
+          "cutoff_size": "9",
+          "selected": 2
+        },
+        {
+          "modality": "text",
+          "domains": 10,
+          "size": "9955",
+          "required": 1,
+          "cutoff_size": "1000",
+          "selected": 1
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "text0.org",
+          "size": "1003",
+          "share_percent": "10.0169",
+          "records": 2,
+          "modalities": [
+            "image",
+            "text"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "img0.org",
+          "size": "10",
+          "share_percent": "0.0998",
+          "records": 1,
+          "modalities": [
+            "image"
+          ]
+        },
+        {
+          "rank": 3,
+          "domain": "img1.org",
+          "size": "9",
+          "share_percent": "0.0898",
+          "records": 1,
+          "modalities": [
+            "image"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "combined-same-input",
+    "options": {
+      "modalityMode": "combined"
+    },
+    "records": [
+      {
+        "url": "https://text0.org/",
+        "size": "1000",
+        "modality": "text"
+      },
+      {
+        "url": "https://text1.org/",
+        "size": "999",
+        "modality": "text"
+      },
+      {
+        "url": "https://text2.org/",
+        "size": "998",
+        "modality": "text"
+      },
+      {
+        "url": "https://text3.org/",
+        "size": "997",
+        "modality": "text"
+      },
+      {
+        "url": "https://text4.org/",
+        "size": "996",
+        "modality": "text"
+      },
+      {
+        "url": "https://text5.org/",
+        "size": "995",
+        "modality": "text"
+      },
+      {
+        "url": "https://text6.org/",
+        "size": "994",
+        "modality": "text"
+      },
+      {
+        "url": "https://text7.org/",
+        "size": "993",
+        "modality": "text"
+      },
+      {
+        "url": "https://text8.org/",
+        "size": "992",
+        "modality": "text"
+      },
+      {
+        "url": "https://text9.org/",
+        "size": "991",
+        "modality": "text"
+      },
+      {
+        "url": "https://img0.org/",
+        "size": "10",
+        "modality": "image"
+      },
+      {
+        "url": "https://img1.org/",
+        "size": "9",
+        "modality": "image"
+      },
+      {
+        "url": "https://img2.org/",
+        "size": "8",
+        "modality": "image"
+      },
+      {
+        "url": "https://img3.org/",
+        "size": "7",
+        "modality": "image"
+      },
+      {
+        "url": "https://img4.org/",
+        "size": "6",
+        "modality": "image"
+      },
+      {
+        "url": "https://img5.org/",
+        "size": "5",
+        "modality": "image"
+      },
+      {
+        "url": "https://img6.org/",
+        "size": "4",
+        "modality": "image"
+      },
+      {
+        "url": "https://img7.org/",
+        "size": "3",
+        "modality": "image"
+      },
+      {
+        "url": "https://img8.org/",
+        "size": "2",
+        "modality": "image"
+      },
+      {
+        "url": "https://img9.org/",
+        "size": "1",
+        "modality": "image"
+      },
+      {
+        "url": "https://text0.org/pic",
+        "size": "3",
+        "modality": "image"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 21,
+        "counted": 21,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 20,
+        "size": "10013"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 20,
+          "size": "10013",
+          "required": 2,
+          "cutoff_size": "999",
+          "selected": 2
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "text0.org",
+          "size": "1003",
+          "share_percent": "10.0169",
+          "records": 2,
+          "modalities": [
+            "image",
+            "text"
+          ]
+        },
+        {
+          "rank": 2,
+          "domain": "text1.org",
+          "size": "999",
+          "share_percent": "9.9770",
+          "records": 1,
+          "modalities": [
+            "text"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "months-and-hosts",
+    "options": {},
+    "records": [
+      {
+        "host": "WWW.Example.com",
+        "size": "10",
+        "month": "2025-03"
+      },
+      {
+        "host": "example.com.",
+        "size": "5",
+        "month": "2024-11"
+      },
+      {
+        "host": "bad host",
+        "size": "5"
+      },
+      {
+        "host": "10.0.0.1",
+        "size": "5"
+      },
+      {
+        "url": "https://other.example.org/",
+        "size": "1",
+        "month": "2026-13"
+      }
+    ],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 5,
+        "counted": 3,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 1,
+          "invalid_host": 1,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": "2024-11",
+        "to": "2025-03"
+      },
+      "totals": {
+        "domains": 2,
+        "size": "16"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 2,
+          "size": "16",
+          "required": 1,
+          "cutoff_size": "15",
+          "selected": 1
+        }
+      ],
+      "domains": [
+        {
+          "rank": 1,
+          "domain": "example.com",
+          "size": "15",
+          "share_percent": "93.7500",
+          "records": 2,
+          "modalities": [
+            "unspecified"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "empty",
+    "options": {},
+    "records": [],
+    "expect": {
+      "method": {
+        "grouping": "registrable-domain",
+        "public_suffix_list": "(bundled)",
+        "private_suffixes": false,
+        "threshold": "top-10-percent",
+        "ties": "include",
+        "modality_mode": "combined",
+        "size_unit": "bytes",
+        "size_measure": "bytes"
+      },
+      "records": {
+        "read": 0,
+        "counted": 0,
+        "skipped": {
+          "invalid_url": 0,
+          "not_http": 0,
+          "ip_address": 0,
+          "invalid_host": 0,
+          "public_suffix_only": 0,
+          "zero_size": 0
+        }
+      },
+      "collection_period": {
+        "from": null,
+        "to": null
+      },
+      "totals": {
+        "domains": 0,
+        "size": "0"
+      },
+      "groups": [
+        {
+          "modality": "all",
+          "domains": 0,
+          "size": "0",
+          "required": 0,
+          "cutoff_size": "0",
+          "selected": 0
+        }
+      ],
+      "domains": []
+    }
+  }
+]

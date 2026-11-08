@@ -1,0 +1,412 @@
+{
+ "id": "HuggingFaceTB/cosmopedia",
+ "sha": "0ae6ec63f91742bd2d1eaef4f02232c55d719385",
+ "lastModified": "2024-08-12T22:05:49.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "language:en",
+  "license:apache-2.0",
+  "size_categories:10M<n<100M",
+  "format:parquet",
+  "modality:text",
+  "library:datasets",
+  "library:dask",
+  "library:mlcroissant",
+  "library:polars",
+  "arxiv:2309.05463",
+  "arxiv:2306.11644",
+  "region:us",
+  "synthetic"
+ ],
+ "cardData": {
+  "dataset_info": [
+   {
+    "config_name": "auto_math_text",
+    "features": [
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 8777587297.907892,
+      "num_examples": 1949895
+     }
+    ],
+    "download_size": 4461401898,
+    "dataset_size": 8777587297.907892
+   },
+   {
+    "config_name": "khanacademy",
+    "features": [
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 108591354.09210858,
+      "num_examples": 24123
+     }
+    ],
+    "download_size": 49139761,
+    "dataset_size": 108591354.09210858
+   },
+   {
+    "config_name": "openstax",
+    "features": [
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 667837450,
+      "num_examples": 126332
+     }
+    ],
+    "download_size": 346992522,
+    "dataset_size": 667837450
+   },
+   {
+    "config_name": "stanford",
+    "features": [
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 6341291506,
+      "num_examples": 1020024
+     }
+    ],
+    "download_size": 3302284560,
+    "dataset_size": 6341291506
+   },
+   {
+    "config_name": "stories",
+    "features": [
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 21314739648,
+      "num_examples": 4992964
+     }
+    ],
+    "download_size": 11902294709,
+    "dataset_size": 21314739648
+   },
+   {
+    "config_name": "web_samples_v1",
+    "features": [
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 69075726295,
+      "num_examples": 12426348
+     }
+    ],
+    "download_size": 38978124936,
+    "dataset_size": 69075726295
+   },
+   {
+    "config_name": "web_samples_v2",
+    "features": [
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 58711802939,
+      "num_examples": 10345867
+     }
+    ],
+    "download_size": 32658254617,
+    "dataset_size": 58711802939
+   },
+   {
+    "config_name": "wikihow",
+    "features": [
+     {
+      "name": "text_token_length",
+      "dtype": "int64"
+     },
+     {
+      "name": "prompt",
+      "dtype": "string"
+     },
+     {
+      "name": "text",
+      "dtype": "string"
+     },
+     {
+      "name": "seed_data",
+      "dtype": "string"
+     },
+     {
+      "name": "format",
+      "dtype": "string"
+     },
+     {
+      "name": "audience",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 892720528,
+      "num_examples": 179191
+     }
+    ],
+    "download_size": 502284600,
+    "dataset_size": 892720528
+   }
+  ],
+  "configs": [
+   {
+    "config_name": "auto_math_text",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/auto_math_text/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "khanacademy",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/khanacademy/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "openstax",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/openstax/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "stanford",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/stanford/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "stories",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/stories/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "web_samples_v1",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/web_samples_v1/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "web_samples_v2",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/web_samples_v2/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "wikihow",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/wikihow/train-*"
+     }
+    ]
+   }
+  ],
+  "license": "apache-2.0",
+  "language": [
+   "en"
+  ],
+  "tags": [
+   "synthetic"
+  ]
+ }
+}

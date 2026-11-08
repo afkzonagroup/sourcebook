@@ -1,0 +1,2017 @@
+[
+  {
+    "fixture": "rajpurkar_squad",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:rajpurkar/squad",
+      "name": "SQuAD",
+      "link": "https://huggingface.co/datasets/rajpurkar/squad",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-sa-4.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "89819092",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "98169",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "rajpurkar_squad.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "Source datasets named in the card: extended|wikipedia."
+      ]
+    }
+  },
+  {
+    "fixture": "rajpurkar_squad",
+    "mode": "api",
+    "expect": {
+      "id": "hf:rajpurkar/squad",
+      "name": "SQuAD",
+      "link": "https://huggingface.co/datasets/rajpurkar/squad",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-sa-4.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "89819092",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "98169",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/rajpurkar/squad",
+        "revision": "7b6d24c440a36b6815f21b70d25016731768db1f"
+      },
+      "notes": [
+        "Source datasets named in the card: extended|wikipedia."
+      ]
+    }
+  },
+  {
+    "fixture": "HuggingFaceFW_fineweb",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:HuggingFaceFW/fineweb",
+      "name": "FineWeb",
+      "link": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "HuggingFaceFW_fineweb.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives only a size category (n>1T, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "HuggingFaceFW_fineweb",
+    "mode": "api",
+    "expect": {
+      "id": "hf:HuggingFaceFW/fineweb",
+      "name": "FineWeb",
+      "link": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/HuggingFaceFW/fineweb",
+        "revision": "9bb295ddab0e05d785b879661af7260fed5140fc"
+      },
+      "notes": [
+        "The card gives only a size category (n>1T, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "wikimedia_wikipedia",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:wikimedia/wikipedia",
+      "name": "wikimedia/wikipedia",
+      "link": "https://huggingface.co/datasets/wikimedia/wikipedia",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "ab",
+        "ace",
+        "ady",
+        "af",
+        "alt",
+        "am",
+        "ami",
+        "an",
+        "ang",
+        "anp",
+        "ar",
+        "arc",
+        "ary",
+        "arz",
+        "as",
+        "ast",
+        "atj",
+        "av",
+        "avk",
+        "awa",
+        "ay",
+        "az",
+        "azb",
+        "ba",
+        "ban",
+        "bar",
+        "bbc",
+        "bcl",
+        "be",
+        "bg",
+        "bh",
+        "bi",
+        "bjn",
+        "blk",
+        "bm",
+        "bn",
+        "bo",
+        "bpy",
+        "br",
+        "bs",
+        "bug",
+        "bxr",
+        "ca",
+        "cbk",
+        "cdo",
+        "ce",
+        "ceb",
+        "ch",
+        "chr",
+        "chy",
+        "ckb",
+        "co",
+        "cr",
+        "crh",
+        "cs",
+        "csb",
+        "cu",
+        "cv",
+        "cy",
+        "da",
+        "dag",
+        "de",
+        "dga",
+        "din",
+        "diq",
+        "dsb",
+        "dty",
+        "dv",
+        "dz",
+        "ee",
+        "el",
+        "eml",
+        "en",
+        "eo",
+        "es",
+        "et",
+        "eu",
+        "ext",
+        "fa",
+        "fat",
+        "ff",
+        "fi",
+        "fj",
+        "fo",
+        "fon",
+        "fr",
+        "frp",
+        "frr",
+        "fur",
+        "fy",
+        "ga",
+        "gag",
+        "gan",
+        "gcr",
+        "gd",
+        "gl",
+        "glk",
+        "gn",
+        "gom",
+        "gor",
+        "got",
+        "gpe",
+        "gsw",
+        "gu",
+        "guc",
+        "gur",
+        "guw",
+        "gv",
+        "ha",
+        "hak",
+        "haw",
+        "hbs",
+        "he",
+        "hi",
+        "hif",
+        "hr",
+        "hsb",
+        "ht",
+        "hu",
+        "hy",
+        "hyw",
+        "ia",
+        "id",
+        "ie",
+        "ig",
+        "ik",
+        "ilo",
+        "inh",
+        "io",
+        "is",
+        "it",
+        "iu",
+        "ja",
+        "jam",
+        "jbo",
+        "jv",
+        "ka",
+        "kaa",
+        "kab",
+        "kbd",
+        "kbp",
+        "kcg",
+        "kg",
+        "ki",
+        "kk",
+        "kl",
+        "km",
+        "kn",
+        "ko",
+        "koi",
+        "krc",
+        "ks",
+        "ksh",
+        "ku",
+        "kv",
+        "kw",
+        "ky",
+        "la",
+        "lad",
+        "lb",
+        "lbe",
+        "lez",
+        "lfn",
+        "lg",
+        "li",
+        "lij",
+        "lld",
+        "lmo",
+        "ln",
+        "lo",
+        "lt",
+        "ltg",
+        "lv",
+        "lzh",
+        "mad",
+        "mai",
+        "map",
+        "mdf",
+        "mg",
+        "mhr",
+        "mi",
+        "min",
+        "mk",
+        "ml",
+        "mn",
+        "mni",
+        "mnw",
+        "mr",
+        "mrj",
+        "ms",
+        "mt",
+        "mwl",
+        "my",
+        "myv",
+        "mzn",
+        "nah",
+        "nan",
+        "nap",
+        "nds",
+        "ne",
+        "new",
+        "nia",
+        "nl",
+        "nn",
+        "no",
+        "nov",
+        "nqo",
+        "nrf",
+        "nso",
+        "nv",
+        "ny",
+        "oc",
+        "olo",
+        "om",
+        "or",
+        "os",
+        "pa",
+        "pag",
+        "pam",
+        "pap",
+        "pcd",
+        "pcm",
+        "pdc",
+        "pfl",
+        "pi",
+        "pih",
+        "pl",
+        "pms",
+        "pnb",
+        "pnt",
+        "ps",
+        "pt",
+        "pwn",
+        "qu",
+        "rm",
+        "rmy",
+        "rn",
+        "ro",
+        "ru",
+        "rue",
+        "rup",
+        "rw",
+        "sa",
+        "sah",
+        "sat",
+        "sc",
+        "scn",
+        "sco",
+        "sd",
+        "se",
+        "sg",
+        "sgs",
+        "shi",
+        "shn",
+        "si",
+        "sk",
+        "skr",
+        "sl",
+        "sm",
+        "smn",
+        "sn",
+        "so",
+        "sq",
+        "sr",
+        "srn",
+        "ss",
+        "st",
+        "stq",
+        "su",
+        "sv",
+        "sw",
+        "szl",
+        "szy",
+        "ta",
+        "tay",
+        "tcy",
+        "te",
+        "tet",
+        "tg",
+        "th",
+        "ti",
+        "tk",
+        "tl",
+        "tly",
+        "tn",
+        "to",
+        "tpi",
+        "tr",
+        "trv",
+        "ts",
+        "tt",
+        "tum",
+        "tw",
+        "ty",
+        "tyv",
+        "udm",
+        "ug",
+        "uk",
+        "ur",
+        "uz",
+        "ve",
+        "vec",
+        "vep",
+        "vi",
+        "vls",
+        "vo",
+        "vro",
+        "wa",
+        "war",
+        "wo",
+        "wuu",
+        "xal",
+        "xh",
+        "xmf",
+        "yi",
+        "yo",
+        "yue",
+        "za",
+        "zea",
+        "zgh",
+        "zh",
+        "zu"
+      ],
+      "licenses": [
+        "cc-by-sa-3.0",
+        "gfdl"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "141564977020",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "61614907",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "wikimedia_wikipedia.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "wikimedia_wikipedia",
+    "mode": "api",
+    "expect": {
+      "id": "hf:wikimedia/wikipedia",
+      "name": "wikimedia/wikipedia",
+      "link": "https://huggingface.co/datasets/wikimedia/wikipedia",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "ab",
+        "ace",
+        "ady",
+        "af",
+        "alt",
+        "am",
+        "ami",
+        "an",
+        "ang",
+        "anp",
+        "ar",
+        "arc",
+        "ary",
+        "arz",
+        "as",
+        "ast",
+        "atj",
+        "av",
+        "avk",
+        "awa",
+        "ay",
+        "az",
+        "azb",
+        "ba",
+        "ban",
+        "bar",
+        "bbc",
+        "bcl",
+        "be",
+        "bg",
+        "bh",
+        "bi",
+        "bjn",
+        "blk",
+        "bm",
+        "bn",
+        "bo",
+        "bpy",
+        "br",
+        "bs",
+        "bug",
+        "bxr",
+        "ca",
+        "cbk",
+        "cdo",
+        "ce",
+        "ceb",
+        "ch",
+        "chr",
+        "chy",
+        "ckb",
+        "co",
+        "cr",
+        "crh",
+        "cs",
+        "csb",
+        "cu",
+        "cv",
+        "cy",
+        "da",
+        "dag",
+        "de",
+        "dga",
+        "din",
+        "diq",
+        "dsb",
+        "dty",
+        "dv",
+        "dz",
+        "ee",
+        "el",
+        "eml",
+        "en",
+        "eo",
+        "es",
+        "et",
+        "eu",
+        "ext",
+        "fa",
+        "fat",
+        "ff",
+        "fi",
+        "fj",
+        "fo",
+        "fon",
+        "fr",
+        "frp",
+        "frr",
+        "fur",
+        "fy",
+        "ga",
+        "gag",
+        "gan",
+        "gcr",
+        "gd",
+        "gl",
+        "glk",
+        "gn",
+        "gom",
+        "gor",
+        "got",
+        "gpe",
+        "gsw",
+        "gu",
+        "guc",
+        "gur",
+        "guw",
+        "gv",
+        "ha",
+        "hak",
+        "haw",
+        "hbs",
+        "he",
+        "hi",
+        "hif",
+        "hr",
+        "hsb",
+        "ht",
+        "hu",
+        "hy",
+        "hyw",
+        "ia",
+        "id",
+        "ie",
+        "ig",
+        "ik",
+        "ilo",
+        "inh",
+        "io",
+        "is",
+        "it",
+        "iu",
+        "ja",
+        "jam",
+        "jbo",
+        "jv",
+        "ka",
+        "kaa",
+        "kab",
+        "kbd",
+        "kbp",
+        "kcg",
+        "kg",
+        "ki",
+        "kk",
+        "kl",
+        "km",
+        "kn",
+        "ko",
+        "koi",
+        "krc",
+        "ks",
+        "ksh",
+        "ku",
+        "kv",
+        "kw",
+        "ky",
+        "la",
+        "lad",
+        "lb",
+        "lbe",
+        "lez",
+        "lfn",
+        "lg",
+        "li",
+        "lij",
+        "lld",
+        "lmo",
+        "ln",
+        "lo",
+        "lt",
+        "ltg",
+        "lv",
+        "lzh",
+        "mad",
+        "mai",
+        "map",
+        "mdf",
+        "mg",
+        "mhr",
+        "mi",
+        "min",
+        "mk",
+        "ml",
+        "mn",
+        "mni",
+        "mnw",
+        "mr",
+        "mrj",
+        "ms",
+        "mt",
+        "mwl",
+        "my",
+        "myv",
+        "mzn",
+        "nah",
+        "nan",
+        "nap",
+        "nds",
+        "ne",
+        "new",
+        "nia",
+        "nl",
+        "nn",
+        "no",
+        "nov",
+        "nqo",
+        "nrf",
+        "nso",
+        "nv",
+        "ny",
+        "oc",
+        "olo",
+        "om",
+        "or",
+        "os",
+        "pa",
+        "pag",
+        "pam",
+        "pap",
+        "pcd",
+        "pcm",
+        "pdc",
+        "pfl",
+        "pi",
+        "pih",
+        "pl",
+        "pms",
+        "pnb",
+        "pnt",
+        "ps",
+        "pt",
+        "pwn",
+        "qu",
+        "rm",
+        "rmy",
+        "rn",
+        "ro",
+        "ru",
+        "rue",
+        "rup",
+        "rw",
+        "sa",
+        "sah",
+        "sat",
+        "sc",
+        "scn",
+        "sco",
+        "sd",
+        "se",
+        "sg",
+        "sgs",
+        "shi",
+        "shn",
+        "si",
+        "sk",
+        "skr",
+        "sl",
+        "sm",
+        "smn",
+        "sn",
+        "so",
+        "sq",
+        "sr",
+        "srn",
+        "ss",
+        "st",
+        "stq",
+        "su",
+        "sv",
+        "sw",
+        "szl",
+        "szy",
+        "ta",
+        "tay",
+        "tcy",
+        "te",
+        "tet",
+        "tg",
+        "th",
+        "ti",
+        "tk",
+        "tl",
+        "tly",
+        "tn",
+        "to",
+        "tpi",
+        "tr",
+        "trv",
+        "ts",
+        "tt",
+        "tum",
+        "tw",
+        "ty",
+        "tyv",
+        "udm",
+        "ug",
+        "uk",
+        "ur",
+        "uz",
+        "ve",
+        "vec",
+        "vep",
+        "vi",
+        "vls",
+        "vo",
+        "vro",
+        "wa",
+        "war",
+        "wo",
+        "wuu",
+        "xal",
+        "xh",
+        "xmf",
+        "yi",
+        "yo",
+        "yue",
+        "za",
+        "zea",
+        "zgh",
+        "zh",
+        "zu"
+      ],
+      "licenses": [
+        "cc-by-sa-3.0",
+        "gfdl"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "141564977020",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "61614907",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/wikimedia/wikipedia",
+        "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "allenai_c4",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:allenai/c4",
+      "name": "C4",
+      "link": "https://huggingface.co/datasets/allenai/c4",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "af",
+        "am",
+        "ar",
+        "az",
+        "be",
+        "bg",
+        "bn",
+        "ca",
+        "ceb",
+        "co",
+        "cs",
+        "cy",
+        "da",
+        "de",
+        "el",
+        "en",
+        "eo",
+        "es",
+        "et",
+        "eu",
+        "fa",
+        "fi",
+        "fil",
+        "fr",
+        "fy",
+        "ga",
+        "gd",
+        "gl",
+        "gu",
+        "ha",
+        "haw",
+        "he",
+        "hi",
+        "hmn",
+        "ht",
+        "hu",
+        "hy",
+        "id",
+        "ig",
+        "is",
+        "it",
+        "iw",
+        "ja",
+        "jv",
+        "ka",
+        "kk",
+        "km",
+        "kn",
+        "ko",
+        "ku",
+        "ky",
+        "la",
+        "lb",
+        "lo",
+        "lt",
+        "lv",
+        "mg",
+        "mi",
+        "mk",
+        "ml",
+        "mn",
+        "mr",
+        "ms",
+        "mt",
+        "my",
+        "ne",
+        "nl",
+        "no",
+        "ny",
+        "pa",
+        "pl",
+        "ps",
+        "pt",
+        "ro",
+        "ru",
+        "sd",
+        "si",
+        "sk",
+        "sl",
+        "sm",
+        "sn",
+        "so",
+        "sq",
+        "sr",
+        "st",
+        "su",
+        "sv",
+        "sw",
+        "ta",
+        "te",
+        "tg",
+        "th",
+        "tr",
+        "uk",
+        "und",
+        "ur",
+        "uz",
+        "vi",
+        "xh",
+        "yi",
+        "yo",
+        "zh",
+        "zu"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "10514982136879",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "1837702356",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "allenai_c4.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "allenai_c4",
+    "mode": "api",
+    "expect": {
+      "id": "hf:allenai/c4",
+      "name": "C4",
+      "link": "https://huggingface.co/datasets/allenai/c4",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "af",
+        "am",
+        "ar",
+        "az",
+        "be",
+        "bg",
+        "bn",
+        "ca",
+        "ceb",
+        "co",
+        "cs",
+        "cy",
+        "da",
+        "de",
+        "el",
+        "en",
+        "eo",
+        "es",
+        "et",
+        "eu",
+        "fa",
+        "fi",
+        "fil",
+        "fr",
+        "fy",
+        "ga",
+        "gd",
+        "gl",
+        "gu",
+        "ha",
+        "haw",
+        "he",
+        "hi",
+        "hmn",
+        "ht",
+        "hu",
+        "hy",
+        "id",
+        "ig",
+        "is",
+        "it",
+        "iw",
+        "ja",
+        "jv",
+        "ka",
+        "kk",
+        "km",
+        "kn",
+        "ko",
+        "ku",
+        "ky",
+        "la",
+        "lb",
+        "lo",
+        "lt",
+        "lv",
+        "mg",
+        "mi",
+        "mk",
+        "ml",
+        "mn",
+        "mr",
+        "ms",
+        "mt",
+        "my",
+        "ne",
+        "nl",
+        "no",
+        "ny",
+        "pa",
+        "pl",
+        "ps",
+        "pt",
+        "ro",
+        "ru",
+        "sd",
+        "si",
+        "sk",
+        "sl",
+        "sm",
+        "sn",
+        "so",
+        "sq",
+        "sr",
+        "st",
+        "su",
+        "sv",
+        "sw",
+        "ta",
+        "te",
+        "tg",
+        "th",
+        "tr",
+        "uk",
+        "und",
+        "ur",
+        "uz",
+        "vi",
+        "xh",
+        "yi",
+        "yo",
+        "zh",
+        "zu"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "10514982136879",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "1837702356",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/allenai/c4",
+        "revision": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "openslr_librispeech_asr",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:openslr/librispeech_asr",
+      "name": "LibriSpeech",
+      "link": "https://huggingface.co/datasets/openslr/librispeech_asr",
+      "category": "public",
+      "modalities": [
+        "audio",
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "openslr_librispeech_asr.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives one size for several modalities; add a size per modality.",
+        "The card gives only a size category (100K<n<1M, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "openslr_librispeech_asr",
+    "mode": "api",
+    "expect": {
+      "id": "hf:openslr/librispeech_asr",
+      "name": "LibriSpeech",
+      "link": "https://huggingface.co/datasets/openslr/librispeech_asr",
+      "category": "public",
+      "modalities": [
+        "audio",
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/openslr/librispeech_asr",
+        "revision": "71cacbfb7e2354c4226d01e70d77d5fca3d04ba1"
+      },
+      "notes": [
+        "The card gives one size for several modalities; add a size per modality.",
+        "The card gives only a size category (100K<n<1M, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "tatsu-lab_alpaca",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:tatsu-lab/alpaca",
+      "name": "Alpaca",
+      "link": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-nc-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "tatsu-lab_alpaca.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "tatsu-lab_alpaca",
+    "mode": "api",
+    "expect": {
+      "id": "hf:tatsu-lab/alpaca",
+      "name": "Alpaca",
+      "link": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-nc-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/tatsu-lab/alpaca",
+        "revision": "dce01c9b08f87459cf36a430d809084718273017"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "facebook_voxpopuli",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:facebook/voxpopuli",
+      "name": "VoxPopuli",
+      "link": "https://huggingface.co/datasets/facebook/voxpopuli",
+      "category": "public",
+      "modalities": [
+        "audio",
+        "text"
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "pl",
+        "it",
+        "ro",
+        "hu",
+        "cs",
+        "nl",
+        "fi",
+        "hr",
+        "sk",
+        "sl",
+        "et",
+        "lt"
+      ],
+      "licenses": [
+        "cc0-1.0",
+        "other"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "facebook_voxpopuli.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives the licence as \"other\" or \"unknown\"; check the conditions of use.",
+        "The card gives one size for several modalities; add a size per modality."
+      ]
+    }
+  },
+  {
+    "fixture": "facebook_voxpopuli",
+    "mode": "api",
+    "expect": {
+      "id": "hf:facebook/voxpopuli",
+      "name": "VoxPopuli",
+      "link": "https://huggingface.co/datasets/facebook/voxpopuli",
+      "category": "public",
+      "modalities": [
+        "audio",
+        "text"
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "pl",
+        "it",
+        "ro",
+        "hu",
+        "cs",
+        "nl",
+        "fi",
+        "hr",
+        "sk",
+        "sl",
+        "et",
+        "lt"
+      ],
+      "licenses": [
+        "cc0-1.0",
+        "other"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/facebook/voxpopuli",
+        "revision": "42f01879c780b4a2e90ec0b4f616c2ece526e4f1"
+      },
+      "notes": [
+        "The card gives the licence as \"other\" or \"unknown\"; check the conditions of use.",
+        "The card gives one size for several modalities; add a size per modality."
+      ]
+    }
+  },
+  {
+    "fixture": "HuggingFaceM4_OBELICS",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:HuggingFaceM4/OBELICS",
+      "name": "OBELICS",
+      "link": "https://huggingface.co/datasets/HuggingFaceM4/OBELICS",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "1400363031407",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "275696552",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "HuggingFaceM4_OBELICS.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "HuggingFaceM4_OBELICS",
+    "mode": "api",
+    "expect": {
+      "id": "hf:HuggingFaceM4/OBELICS",
+      "name": "OBELICS",
+      "link": "https://huggingface.co/datasets/HuggingFaceM4/OBELICS",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "1400363031407",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "275696552",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/HuggingFaceM4/OBELICS",
+        "revision": "08b7dca61ec09bacd68234ba6c388209b126d31c"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "HuggingFaceTB_cosmopedia",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:HuggingFaceTB/cosmopedia",
+      "name": "HuggingFaceTB/cosmopedia",
+      "link": "https://huggingface.co/datasets/HuggingFaceTB/cosmopedia",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "apache-2.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "165890297017",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "31064744",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "HuggingFaceTB_cosmopedia.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "HuggingFaceTB_cosmopedia",
+    "mode": "api",
+    "expect": {
+      "id": "hf:HuggingFaceTB/cosmopedia",
+      "name": "HuggingFaceTB/cosmopedia",
+      "link": "https://huggingface.co/datasets/HuggingFaceTB/cosmopedia",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "apache-2.0"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "165890297017",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "31064744",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/HuggingFaceTB/cosmopedia",
+        "revision": "0ae6ec63f91742bd2d1eaef4f02232c55d719385"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "mozilla-foundation_common_voice_17_0",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:mozilla-foundation/common_voice_17_0",
+      "name": "mozilla-foundation/common_voice_17_0",
+      "link": "https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0",
+      "category": "public",
+      "modalities": [
+        "audio"
+      ],
+      "languages": [],
+      "licenses": [],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "mozilla-foundation_common_voice_17_0.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card names no licence; check the conditions of use."
+      ]
+    }
+  },
+  {
+    "fixture": "mozilla-foundation_common_voice_17_0",
+    "mode": "api",
+    "expect": {
+      "id": "hf:mozilla-foundation/common_voice_17_0",
+      "name": "mozilla-foundation/common_voice_17_0",
+      "link": "https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0",
+      "category": "public",
+      "modalities": [
+        "audio"
+      ],
+      "languages": [],
+      "licenses": [],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/mozilla-foundation/common_voice_17_0",
+        "revision": "11dc88355e899d1bf2df74f01b904a8544a17b33"
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card names no licence; check the conditions of use."
+      ]
+    }
+  },
+  {
+    "fixture": "nvidia_HelpSteer2",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:nvidia/HelpSteer2",
+      "name": "HelpSteer2",
+      "link": "https://huggingface.co/datasets/nvidia/HelpSteer2",
+      "category": "public",
+      "modalities": [],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "nvidia_HelpSteer2.README.md",
+        "revision": null
+      },
+      "notes": [
+        "The card does not show the modalities; add them.",
+        "The card gives only a size category (10K<n<100K, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "nvidia_HelpSteer2",
+    "mode": "api",
+    "expect": {
+      "id": "hf:nvidia/HelpSteer2",
+      "name": "HelpSteer2",
+      "link": "https://huggingface.co/datasets/nvidia/HelpSteer2",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-4.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/nvidia/HelpSteer2",
+        "revision": "990b2711a36180dd19d9c94b8627844866f8982a"
+      },
+      "notes": [
+        "The card gives only a size category (10K<n<100K, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "databricks_databricks-dolly-15k",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:databricks/databricks-dolly-15k",
+      "name": "databricks/databricks-dolly-15k",
+      "link": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-sa-3.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "databricks_databricks-dolly-15k.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives only a size category (10K<n<100K, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "databricks_databricks-dolly-15k",
+    "mode": "api",
+    "expect": {
+      "id": "hf:databricks/databricks-dolly-15k",
+      "name": "databricks/databricks-dolly-15k",
+      "link": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "cc-by-sa-3.0"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/databricks/databricks-dolly-15k",
+        "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a"
+      },
+      "notes": [
+        "The card gives only a size category (10K<n<100K, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "allenai_dolma",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:allenai/dolma",
+      "name": "Dolma",
+      "link": "https://huggingface.co/datasets/allenai/dolma",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "allenai_dolma.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives only a size category (n>1T, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "allenai_dolma",
+    "mode": "api",
+    "expect": {
+      "id": "hf:allenai/dolma",
+      "name": "Dolma",
+      "link": "https://huggingface.co/datasets/allenai/dolma",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "odc-by"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/allenai/dolma",
+        "revision": "7f48140530a023e9ea4c5cfb141160922727d4d3"
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them.",
+        "The card gives only a size category (n>1T, number of examples)."
+      ]
+    }
+  },
+  {
+    "fixture": "openai_gsm8k",
+    "mode": "offline",
+    "expect": {
+      "id": "hf:openai/gsm8k",
+      "name": "Grade School Math 8K",
+      "link": "https://huggingface.co/datasets/openai/gsm8k",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "mit"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "10811901",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "17584",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-card",
+        "reference": "openai_gsm8k.README.md",
+        "revision": null
+      },
+      "notes": [
+        "Modalities were inferred from the card (feature types and task categories); check them."
+      ]
+    }
+  },
+  {
+    "fixture": "openai_gsm8k",
+    "mode": "api",
+    "expect": {
+      "id": "hf:openai/gsm8k",
+      "name": "Grade School Math 8K",
+      "link": "https://huggingface.co/datasets/openai/gsm8k",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "en"
+      ],
+      "licenses": [
+        "mit"
+      ],
+      "sizes": [
+        {
+          "modality": "text",
+          "value": "10811901",
+          "unit": "bytes",
+          "basis": "dataset_info.dataset_size in the dataset card (before any pre-processing of yours)",
+          "after_preprocessing": false
+        },
+        {
+          "modality": "text",
+          "value": "17584",
+          "unit": "examples",
+          "basis": "dataset_info splits num_examples in the dataset card",
+          "after_preprocessing": false
+        }
+      ],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/openai/gsm8k",
+        "revision": "740312add88f781978c0658806c59bc2815b9866"
+      },
+      "notes": []
+    }
+  },
+  {
+    "fixture": "bigcode_the-stack",
+    "mode": "api-no-readme",
+    "expect": {
+      "id": "hf:bigcode/the-stack",
+      "name": "The-Stack",
+      "link": "https://huggingface.co/datasets/bigcode/the-stack",
+      "category": "public",
+      "modalities": [
+        "text"
+      ],
+      "languages": [
+        "code"
+      ],
+      "licenses": [
+        "other"
+      ],
+      "sizes": [],
+      "collection_period": {
+        "start": null,
+        "end": null
+      },
+      "publicly_known": null,
+      "source": {
+        "kind": "hf-hub",
+        "reference": "https://huggingface.co/api/datasets/bigcode/the-stack",
+        "revision": "153f6301d232928d7f90d09b37fceb4fadc2c950"
+      },
+      "notes": [
+        "The card gives the licence as \"other\" or \"unknown\"; check the conditions of use.",
+        "The card gives only a size category (unknown, number of examples).",
+        "Access to the dataset is gated on the Hub (auto); check whether it is \"made available publicly for free\" and \"readily downloadable\" (Section 2.1)."
+      ]
+    }
+  }
+]

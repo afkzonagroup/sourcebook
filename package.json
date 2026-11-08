@@ -1,0 +1,77 @@
+{
+  "name": "@afkzona/sourcebook",
+  "version": "0.1.0",
+  "description": "Draw up the public summary of training content for general-purpose AI models (AI Act Article 53(1)(d)) in the AI Office template: typed schema, collectors for dataset cards, manifests and crawl logs, validation and rendering.",
+  "license": "AGPL-3.0-only",
+  "author": "MB AFKzona Group",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afkzonagroup/sourcebook.git"
+  },
+  "homepage": "https://github.com/afkzonagroup/sourcebook#readme",
+  "bugs": {
+    "url": "https://github.com/afkzonagroup/sourcebook/issues"
+  },
+  "keywords": [
+    "ai-act",
+    "general-purpose-ai",
+    "training-data",
+    "article-53",
+    "transparency",
+    "hugging-face",
+    "dataset-card",
+    "eu"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "sideEffects": false,
+  "bin": {
+    "sourcebook": "./dist/cli/main.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./schema/summary-v1.json": "./schema/summary-v1.schema.json",
+    "./schema/inventory-v1.json": "./schema/inventory-v1.schema.json",
+    "./template.json": "./spec/template-v1.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "!dist/**/*.map",
+    "!dist/**/*.tsbuildinfo",
+    "data/",
+    "schema/",
+    "spec/",
+    "LICENSE",
+    "LICENSE-ADDITIONAL-TERMS.md",
+    "NOTICE",
+    "COMMERCIAL.md",
+    "TRADEMARKS.md",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --coverage",
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.20.5",
+    "@vitest/coverage-v8": "4.1.12",
+    "ajv": "8.20.0",
+    "eslint": "10.14.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "4.1.12"
+  }
+}

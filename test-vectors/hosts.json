@@ -1,0 +1,593 @@
+{
+  "urls": [
+    {
+      "input": "https://www.Example.COM/path?q=1#f",
+      "expect": {
+        "ok": true,
+        "host": "www.example.com"
+      }
+    },
+    {
+      "input": "http://user:pass@news.bbc.co.uk:8080/x",
+      "expect": {
+        "ok": true,
+        "host": "news.bbc.co.uk"
+      }
+    },
+    {
+      "input": "HTTPS://Example.org.",
+      "expect": {
+        "ok": true,
+        "host": "example.org"
+      }
+    },
+    {
+      "input": "https://bücher.example/",
+      "expect": {
+        "ok": true,
+        "host": "xn--bcher-kva.example"
+      }
+    },
+    {
+      "input": "https://xn--bcher-kva.example/",
+      "expect": {
+        "ok": true,
+        "host": "xn--bcher-kva.example"
+      }
+    },
+    {
+      "input": "https://例え.テスト/",
+      "expect": {
+        "ok": true,
+        "host": "xn--r8jz45g.xn--zckzah"
+      }
+    },
+    {
+      "input": "https://ÉCOLE.fr/",
+      "expect": {
+        "ok": true,
+        "host": "xn--cole-9oa.fr"
+      }
+    },
+    {
+      "input": "https://straße.de/",
+      "expect": {
+        "ok": true,
+        "host": "xn--strae-oqa.de"
+      }
+    },
+    {
+      "input": "https://ﬁle.example/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://a。b。example/",
+      "expect": {
+        "ok": true,
+        "host": "a.b.example"
+      }
+    },
+    {
+      "input": "https://192.168.0.1/",
+      "expect": {
+        "ok": false,
+        "reason": "ip_address"
+      }
+    },
+    {
+      "input": "https://0x7f.0.0.1/",
+      "expect": {
+        "ok": false,
+        "reason": "ip_address"
+      }
+    },
+    {
+      "input": "https://[::1]/",
+      "expect": {
+        "ok": false,
+        "reason": "ip_address"
+      }
+    },
+    {
+      "input": "https://example.com:99999/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_url"
+      }
+    },
+    {
+      "input": "https://example.com:/x",
+      "expect": {
+        "ok": true,
+        "host": "example.com"
+      }
+    },
+    {
+      "input": "ftp://example.com/file",
+      "expect": {
+        "ok": false,
+        "reason": "not_http"
+      }
+    },
+    {
+      "input": "mailto:someone@example.com",
+      "expect": {
+        "ok": false,
+        "reason": "not_http"
+      }
+    },
+    {
+      "input": "dns:example.com",
+      "expect": {
+        "ok": false,
+        "reason": "not_http"
+      }
+    },
+    {
+      "input": "example.com/no-scheme",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_url"
+      }
+    },
+    {
+      "input": "",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_url"
+      }
+    },
+    {
+      "input": "https://",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://exa mple.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://exa%6dple.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://-weird-.example.com/",
+      "expect": {
+        "ok": true,
+        "host": "-weird-.example.com"
+      }
+    },
+    {
+      "input": "https://under_score.example.com/",
+      "expect": {
+        "ok": true,
+        "host": "under_score.example.com"
+      }
+    },
+    {
+      "input": "https://a..b.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://emoji😀.com/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://localhost/",
+      "expect": {
+        "ok": true,
+        "host": "localhost"
+      }
+    },
+    {
+      "input": "https://ＡＢ.example/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://Ⅰ.example/",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://İstanbul.com.tr/",
+      "expect": {
+        "ok": true,
+        "host": "xn--istanbul-o0e.com.tr"
+      }
+    },
+    {
+      "input": "https://K.example/",
+      "expect": {
+        "ok": true,
+        "host": "k.example"
+      }
+    },
+    {
+      "input": "https://a@b@c.example.com/",
+      "expect": {
+        "ok": true,
+        "host": "c.example.com"
+      }
+    },
+    {
+      "input": "https://a.com../",
+      "expect": {
+        "ok": false,
+        "reason": "invalid_host"
+      }
+    },
+    {
+      "input": "https://www.city.kawasaki.jp/",
+      "expect": {
+        "ok": true,
+        "host": "www.city.kawasaki.jp"
+      }
+    }
+  ],
+  "punycode": [
+    {
+      "input": "bücher",
+      "expect": "bcher-kva"
+    },
+    {
+      "input": "münchen",
+      "expect": "mnchen-3ya"
+    },
+    {
+      "input": "ελληνικά",
+      "expect": "hxargifdar"
+    },
+    {
+      "input": "中文",
+      "expect": "fiq228c"
+    },
+    {
+      "input": "españa",
+      "expect": "espaa-rta"
+    },
+    {
+      "input": "ü",
+      "expect": "tda"
+    },
+    {
+      "input": "abc",
+      "expect": "abc-"
+    },
+    {
+      "input": "straße",
+      "expect": "strae-oqa"
+    },
+    {
+      "input": "ⓐ",
+      "expect": "vuh"
+    },
+    {
+      "input": "3年b組金八先生",
+      "expect": "3b-ww4c5e180e575a65lsy2b"
+    }
+  ],
+  "required_count": [
+    {
+      "n": 0,
+      "sme": false,
+      "expect": 0
+    },
+    {
+      "n": 0,
+      "sme": true,
+      "expect": 0
+    },
+    {
+      "n": 1,
+      "sme": false,
+      "expect": 1
+    },
+    {
+      "n": 1,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 5,
+      "sme": false,
+      "expect": 1
+    },
+    {
+      "n": 5,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 9,
+      "sme": false,
+      "expect": 1
+    },
+    {
+      "n": 9,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 10,
+      "sme": false,
+      "expect": 1
+    },
+    {
+      "n": 10,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 11,
+      "sme": false,
+      "expect": 2
+    },
+    {
+      "n": 11,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 19,
+      "sme": false,
+      "expect": 2
+    },
+    {
+      "n": 19,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 20,
+      "sme": false,
+      "expect": 2
+    },
+    {
+      "n": 20,
+      "sme": true,
+      "expect": 1
+    },
+    {
+      "n": 21,
+      "sme": false,
+      "expect": 3
+    },
+    {
+      "n": 21,
+      "sme": true,
+      "expect": 2
+    },
+    {
+      "n": 99,
+      "sme": false,
+      "expect": 10
+    },
+    {
+      "n": 99,
+      "sme": true,
+      "expect": 5
+    },
+    {
+      "n": 100,
+      "sme": false,
+      "expect": 10
+    },
+    {
+      "n": 100,
+      "sme": true,
+      "expect": 5
+    },
+    {
+      "n": 101,
+      "sme": false,
+      "expect": 11
+    },
+    {
+      "n": 101,
+      "sme": true,
+      "expect": 6
+    },
+    {
+      "n": 19999,
+      "sme": false,
+      "expect": 2000
+    },
+    {
+      "n": 19999,
+      "sme": true,
+      "expect": 1000
+    },
+    {
+      "n": 20000,
+      "sme": false,
+      "expect": 2000
+    },
+    {
+      "n": 20000,
+      "sme": true,
+      "expect": 1000
+    },
+    {
+      "n": 20001,
+      "sme": false,
+      "expect": 2001
+    },
+    {
+      "n": 20001,
+      "sme": true,
+      "expect": 1000
+    },
+    {
+      "n": 30000,
+      "sme": false,
+      "expect": 3000
+    },
+    {
+      "n": 30000,
+      "sme": true,
+      "expect": 1000
+    },
+    {
+      "n": 1000000,
+      "sme": false,
+      "expect": 100000
+    },
+    {
+      "n": 1000000,
+      "sme": true,
+      "expect": 1000
+    }
+  ],
+  "share": [
+    {
+      "size": "1",
+      "total": "3",
+      "expect": "33.3333"
+    },
+    {
+      "size": "2",
+      "total": "3",
+      "expect": "66.6666"
+    },
+    {
+      "size": "0",
+      "total": "5",
+      "expect": "0.0000"
+    },
+    {
+      "size": "5",
+      "total": "5",
+      "expect": "100.0000"
+    },
+    {
+      "size": "123456789012345678901234567890",
+      "total": "987654321098765432109876543210",
+      "expect": "12.4999"
+    },
+    {
+      "size": "7",
+      "total": "0",
+      "expect": "0.0000"
+    }
+  ],
+  "links": [
+    {
+      "input": "https://example.org/a?b=c#d",
+      "expect": true
+    },
+    {
+      "input": "http://example.org",
+      "expect": true
+    },
+    {
+      "input": "https://example.org:8080/x",
+      "expect": true
+    },
+    {
+      "input": "https://example.org:65536/x",
+      "expect": false
+    },
+    {
+      "input": "javascript:alert(1)",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a b",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a\u0085b",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a\u00a0b",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a\ufeffb",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a\u202eb",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a b",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/a\u001fb",
+      "expect": false
+    },
+    {
+      "input": "https://example.org/café",
+      "expect": true
+    },
+    {
+      "input": "https://example.org/a>b",
+      "expect": false
+    }
+  ],
+  "surt": [
+    {
+      "input": "com,example,www)/path",
+      "expect": "www.example.com"
+    },
+    {
+      "input": "uk,co,bbc)/news",
+      "expect": "bbc.co.uk"
+    },
+    {
+      "input": "com,example:8080)/x",
+      "expect": "example.com"
+    },
+    {
+      "input": "http://(com,example,)/",
+      "expect": "example.com"
+    },
+    {
+      "input": "nonsense",
+      "expect": null
+    },
+    {
+      "input": ")/x",
+      "expect": null
+    }
+  ]
+}

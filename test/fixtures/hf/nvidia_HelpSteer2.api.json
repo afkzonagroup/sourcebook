@@ -1,0 +1,37 @@
+{
+ "id": "nvidia/HelpSteer2",
+ "sha": "990b2711a36180dd19d9c94b8627844866f8982a",
+ "lastModified": "2024-12-18T21:06:57.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "language:en",
+  "license:cc-by-4.0",
+  "size_categories:10K<n<100K",
+  "format:json",
+  "modality:tabular",
+  "modality:text",
+  "library:datasets",
+  "library:pandas",
+  "library:mlcroissant",
+  "library:polars",
+  "arxiv:2410.01257",
+  "arxiv:2406.08673",
+  "region:us",
+  "human-feedback"
+ ],
+ "cardData": {
+  "license": "cc-by-4.0",
+  "language": [
+   "en"
+  ],
+  "pretty_name": "HelpSteer2",
+  "size_categories": [
+   "10K<n<100K"
+  ],
+  "tags": [
+   "human-feedback"
+  ]
+ }
+}

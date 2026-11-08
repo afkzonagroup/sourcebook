@@ -1,0 +1,8 @@
+ CDX N b a m s k r M S V g
+uk,co,example,news)/a 20250203100001 https://news.example.co.uk/a text/html 200 AAAA - - 1200 0 sample.warc.gz
+uk,co,example,www)/b 20250304100001 https://www.example.co.uk/b text/html 200 BBBB - - 700 1200 sample.warc.gz
+org,example,blog)/c 20250405100001 https://blog.example.org/c text/html 404 CCCC - - 5100 1900 sample.warc.gz
+net,example,img)/p.jpg 20250506100001 https://img.example.net/p.jpg image/jpeg 200 DDDD - - 2100 7000 sample.warc.gz
+uk,co,example,news)/a 20250607100001 https://news.example.co.uk/a warc/revisit - AAAA - - 300 9100 sample.warc.gz
+org,example,files)/doc.txt 20250708100001 - text/plain - EEEE - - 400 9400 sample.warc.gz
+broken line

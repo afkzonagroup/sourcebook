@@ -1,0 +1,39 @@
+{
+ "id": "allenai/dolma",
+ "sha": "7f48140530a023e9ea4c5cfb141160922727d4d3",
+ "lastModified": "2024-04-17T02:57:00.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "task_categories:text-generation",
+  "language:en",
+  "license:odc-by",
+  "size_categories:n>1T",
+  "arxiv:2402.00159",
+  "arxiv:2301.13688",
+  "region:us",
+  "language-modeling",
+  "casual-lm",
+  "llm"
+ ],
+ "cardData": {
+  "license": "odc-by",
+  "viewer": false,
+  "task_categories": [
+   "text-generation"
+  ],
+  "language": [
+   "en"
+  ],
+  "tags": [
+   "language-modeling",
+   "casual-lm",
+   "llm"
+  ],
+  "pretty_name": "Dolma",
+  "size_categories": [
+   "n>1T"
+  ]
+ }
+}

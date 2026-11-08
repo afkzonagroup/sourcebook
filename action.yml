@@ -1,0 +1,54 @@
+# Copyright 2026 MB AFKzona Group
+# SPDX-License-Identifier: AGPL-3.0-only
+name: Sourcebook training content summary check
+description: Validate the public summary of training content (AI Act Article 53(1)(d)) in a model repository against the AI Office template.
+author: AFKzona Group
+branding:
+  icon: check-square
+  color: blue
+inputs:
+  summary:
+    description: Path of the summary file (YAML or JSON) inside the repository.
+    default: 'training-content-summary.yaml'
+  inventory:
+    description: Optional inventory JSON files (one per line) to cross-check the large datasets and the domain list.
+    default: ''
+  strict:
+    description: Fail on warnings too ("true" or "false").
+    default: 'false'
+  as-of:
+    description: Date (YYYY-MM-DD) to check update intervals against; today by default.
+    default: ''
+outputs:
+  errors:
+    description: Number of errors.
+    value: ${{ steps.check.outputs.errors }}
+  warnings:
+    description: Number of warnings.
+    value: ${{ steps.check.outputs.warnings }}
+  valid:
+    description: '"true" when the check passed.'
+    value: ${{ steps.check.outputs.valid }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: '22'
+    - name: Install Sourcebook
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      run: |
+        set -euo pipefail
+        npm ci --ignore-scripts --no-audit --no-fund
+        npm run build
+    - name: Check the summary
+      id: check
+      shell: bash
+      # Inputs reach the program only through environment variables, so they cannot inject shell code.
+      env:
+        INPUT_SUMMARY: ${{ inputs.summary }}
+        INPUT_INVENTORY: ${{ inputs.inventory }}
+        INPUT_STRICT: ${{ inputs.strict }}
+        INPUT_AS_OF: ${{ inputs.as-of }}
+      run: node "$GITHUB_ACTION_PATH/dist/action/main.js"

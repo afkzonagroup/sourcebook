@@ -1,0 +1,58 @@
+{
+ "id": "bigcode/the-stack",
+ "sha": "153f6301d232928d7f90d09b37fceb4fadc2c950",
+ "lastModified": "2026-08-03T13:24:27.000Z",
+ "private": false,
+ "gated": "auto",
+ "disabled": false,
+ "tags": [
+  "task_categories:text-generation",
+  "language_creators:crowdsourced",
+  "language_creators:expert-generated",
+  "multilinguality:multilingual",
+  "language:code",
+  "license:other",
+  "size_categories:100M<n<1B",
+  "format:parquet",
+  "modality:tabular",
+  "modality:text",
+  "library:datasets",
+  "library:dask",
+  "library:polars",
+  "library:mlcroissant",
+  "arxiv:2211.15533",
+  "arxiv:2107.03374",
+  "arxiv:2207.14157",
+  "region:us"
+ ],
+ "cardData": {
+  "annotations_creators": [],
+  "language_creators": [
+   "crowdsourced",
+   "expert-generated"
+  ],
+  "language": [
+   "code"
+  ],
+  "license": [
+   "other"
+  ],
+  "multilinguality": [
+   "multilingual"
+  ],
+  "pretty_name": "The-Stack",
+  "size_categories": [
+   "unknown"
+  ],
+  "source_datasets": [],
+  "task_categories": [
+   "text-generation"
+  ],
+  "task_ids": [],
+  "extra_gated_prompt": "## Terms of Use for The Stack\n\nThe Stack dataset is a collection of source code in over 300 programming languages. We ask that you read and acknowledge the following points before using the dataset:\n1. The Stack is a collection of source code from repositories with various licenses. Any use of all or part of the code gathered in The Stack must abide by the terms of the original licenses, including attribution clauses when relevant. We facilitate this by providing provenance information for each data point.\n2. The Stack is regularly updated to enact validated data removal requests. By clicking on \"Access repository\", you agree to update your own version of The Stack to the most recent usable version specified by the maintainers in [the following thread](https://huggingface.co/datasets/bigcode/the-stack/discussions/7). If you have questions about dataset versions and allowed uses, please also ask them in the dataset’s [community discussions](https://huggingface.co/datasets/bigcode/the-stack/discussions/new). We will also notify users via email when the latest usable version changes.\n3. To host, share, or otherwise provide access to The Stack dataset, you must include [these Terms of Use](https://huggingface.co/datasets/bigcode/the-stack#terms-of-use-for-the-stack) and require users to agree to it.\n\nBy clicking on \"Access repository\" below, you accept that your contact information (email address and username) can be shared with the dataset maintainers as well.\n  ",
+  "extra_gated_fields": {
+   "Email": "text",
+   "I have read the License and agree with its terms": "checkbox"
+  }
+ }
+}

@@ -1,0 +1,200 @@
+---
+pretty_name: LibriSpeech
+annotations_creators:
+- expert-generated
+language_creators:
+- crowdsourced
+- expert-generated
+language:
+- en
+license:
+- cc-by-4.0
+multilinguality:
+- monolingual
+paperswithcode_id: librispeech-1
+size_categories:
+- 100K<n<1M
+source_datasets:
+- original
+task_categories:
+- automatic-speech-recognition
+- audio-classification
+task_ids:
+- speaker-identification
+dataset_info:
+- config_name: clean
+  features:
+  - name: file
+    dtype: string
+  - name: audio
+    dtype:
+      audio:
+        sampling_rate: 16000
+  - name: text
+    dtype: string
+  - name: speaker_id
+    dtype: int64
+  - name: chapter_id
+    dtype: int64
+  - name: id
+    dtype: string
+  splits:
+  - name: train.100
+    num_bytes: 6619683041
+    num_examples: 28539
+  - name: train.360
+    num_bytes: 23898214592
+    num_examples: 104014
+  - name: validation
+    num_bytes: 359572231
+    num_examples: 2703
+  - name: test
+    num_bytes: 367705423
+    num_examples: 2620
+  download_size: 30121377654
+  dataset_size: 31245175287
+- config_name: other
+  features:
+  - name: file
+    dtype: string
+  - name: audio
+    dtype:
+      audio:
+        sampling_rate: 16000
+  - name: text
+    dtype: string
+  - name: speaker_id
+    dtype: int64
+  - name: chapter_id
+    dtype: int64
+  - name: id
+    dtype: string
+  splits:
+  - name: train.500
+    num_bytes: 31810256902
+    num_examples: 148688
+  - name: validation
+    num_bytes: 337283304
+    num_examples: 2864
+  - name: test
+    num_bytes: 352396474
+    num_examples: 2939
+  download_size: 31236565377
+  dataset_size: 32499936680
+- config_name: all
+  features:
+  - name: file
+    dtype: string
+  - name: audio
+    dtype:
+      audio:
+        sampling_rate: 16000
+  - name: text
+    dtype: string
+  - name: speaker_id
+    dtype: int64
+  - name: chapter_id
+    dtype: int64
+  - name: id
+    dtype: string
+  splits:
+  - name: train.clean.100
+    num_bytes: 6627791685
+    num_examples: 28539
+  - name: train.clean.360
+    num_bytes: 23927767570
+    num_examples: 104014
+  - name: train.other.500
+    num_bytes: 31852502880
+    num_examples: 148688
+  - name: validation.clean
+    num_bytes: 359505691
+    num_examples: 2703
+  - name: validation.other
+    num_bytes: 337213112
+    num_examples: 2864
+  - name: test.clean
+    num_bytes: 368449831
+    num_examples: 2620
+  - name: test.other
+    num_bytes: 353231518
+    num_examples: 2939
+  download_size: 61357943031
+  dataset_size: 63826462287
+configs:
+- config_name: clean
+  data_files:
+  - split: test
+    path: "clean/test/*.parquet"
+  - split: train.100
+    path: "clean/train.100/*.parquet"
+  - split: train.360
+    path: "clean/train.360/*.parquet"
+  - split: validation
+    path: "clean/validation/*.parquet"
+- config_name: other
+  data_files:
+  - split: test
+    path: "other/test/*.parquet"
+  - split: train.500
+    path: "other/train.500/*.parquet"
+  - split: validation
+    path: "other/validation/*.parquet"
+- config_name: all
+  default: true
+  data_files:
+  - split: test.clean
+    path: "all/test.clean/*.parquet"
+  - split: test.other
+    path: "all/test.other/*.parquet"
+  - split: train.clean.100
+    path: "all/train.clean.100/*.parquet"
+  - split: train.clean.360
+    path: "all/train.clean.360/*.parquet"
+  - split: train.other.500
+    path: "all/train.other.500/*.parquet"
+  - split: validation.clean
+    path: "all/validation.clean/*.parquet"
+  - split: validation.other
+    path: "all/validation.other/*.parquet"
+---
+
+# Dataset Card for librispeech_asr
+
+## Table of Contents
+- [Dataset Description](#dataset-description)
+  - [Dataset Summary](#dataset-summary)
+  - [Supported Tasks and Leaderboards](#supported-tasks-and-leaderboards)
+  - [Languages](#languages)
+- [Dataset Structure](#dataset-structure)
+  - [Data Instances](#data-instances)
+  - [Data Fields](#data-fields)
+  - [Data Splits](#data-splits)
+- [Dataset Creation](#dataset-creation)
+  - [Curation Rationale](#curation-rationale)
+  - [Source Data](#source-data)
+  - [Annotations](#annotations)
+  - [Personal and Sensitive Information](#personal-and-sensitive-information)
+- [Considerations for Using the Data](#considerations-for-using-the-data)
+  - [Social Impact of Dataset](#social-impact-of-dataset)
+  - [Discussion of Biases](#discussion-of-biases)
+  - [Other Known Limitations](#other-known-limitations)
+- [Additional Information](#additional-information)
+  - [Dataset Curators](#dataset-curators)
+  - [Licensing Information](#licensing-information)
+  - [Citation Information](#citation-information)
+  - [Contributions](#contributions)
+
+## Dataset Description
+
+- **Homepage:** [LibriSpeech ASR corpus](http://www.openslr.org/12)
+- **Repository:** [Needs More Information]
+- **Paper:** [LibriSpeech: An ASR Corpus Based On Public Domain Audio Books](https://www.danielpovey.com/files/2015_icassp_librispeech.pdf)
+- **Leaderboard:** [The 🤗 Speech Bench](https://huggingface.co/spaces/huggingface/hf-speech-bench)
+- **Point of Contact:** [Daniel Povey](mailto:dpovey@gmail.com)
+
+### Dataset Summary
+
+LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned.
+
+### Supported Tasks and Leaderboards

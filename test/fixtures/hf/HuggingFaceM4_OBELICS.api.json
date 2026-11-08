@@ -1,0 +1,113 @@
+{
+ "id": "HuggingFaceM4/OBELICS",
+ "sha": "08b7dca61ec09bacd68234ba6c388209b126d31c",
+ "lastModified": "2023-08-22T20:50:09.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "language:en",
+  "license:cc-by-4.0",
+  "size_categories:100M<n<1B",
+  "format:parquet",
+  "modality:text",
+  "library:datasets",
+  "library:dask",
+  "library:mlcroissant",
+  "library:polars",
+  "arxiv:2306.16527",
+  "region:us"
+ ],
+ "cardData": {
+  "language": [
+   "en"
+  ],
+  "license": "cc-by-4.0",
+  "size_categories": [
+   "100M<n<1B"
+  ],
+  "pretty_name": "OBELICS",
+  "configs": [
+   {
+    "config_name": "default",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/train-*"
+     }
+    ]
+   },
+   {
+    "config_name": "opt_out_docs_removed_2023_07_12",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "opt_out_docs_removed_2023_07_12/train-*"
+     }
+    ]
+   }
+  ],
+  "dataset_info": [
+   {
+    "config_name": "default",
+    "features": [
+     {
+      "name": "images",
+      "sequence": "string"
+     },
+     {
+      "name": "metadata",
+      "dtype": "string"
+     },
+     {
+      "name": "general_metadata",
+      "dtype": "string"
+     },
+     {
+      "name": "texts",
+      "sequence": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 715724717192,
+      "num_examples": 141047697
+     }
+    ],
+    "download_size": 71520629655,
+    "dataset_size": 715724717192
+   },
+   {
+    "config_name": "opt_out_docs_removed_2023_07_12",
+    "features": [
+     {
+      "name": "images",
+      "sequence": "string"
+     },
+     {
+      "name": "metadata",
+      "dtype": "string"
+     },
+     {
+      "name": "general_metadata",
+      "dtype": "string"
+     },
+     {
+      "name": "texts",
+      "sequence": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 684638314215,
+      "num_examples": 134648855
+     }
+    ],
+    "download_size": 266501092920,
+    "dataset_size": 684638314215
+   }
+  ]
+ }
+}

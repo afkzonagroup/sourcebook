@@ -1,0 +1,31 @@
+Sourcebook
+Copyright 2026 MB AFKzona Group
+
+This product includes third-party material:
+
+1. The Public Suffix List (https://publicsuffix.org/), version
+   2026-11-06_09-01-47_UTC, in data/public_suffix_list.dat.gz (and its copy
+   in python/src/sourcebook/data/). It is distributed unmodified, gzip-
+   compressed, under the Mozilla Public License, version 2.0
+   (data/PSL-LICENSE.txt). The source form is the uncompressed file at
+   https://publicsuffix.org/list/public_suffix_list.dat; its SHA-256 is
+   027fe126522e646b2335c3d564750d7223f0994a1a460107ce4f3a40bd682310.
+
+2. Text of the "Template for the Public Summary of Training Content for
+   General-Purpose AI models" (Annex to Communication from the Commission
+   C(2025) 8311 final) and of its Explanatory Notice, in src/spec/template.ts,
+   spec/template-v1.json and test/fixtures/official/.
+   © European Union. Reused under the Creative Commons Attribution 4.0
+   International licence (CC BY 4.0) in line with Commission Decision
+   2011/833/EU on the reuse of Commission documents. Source:
+   https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models
+   Changes: the text is split into fields; whitespace is normalised.
+
+3. The official test cases of the Public Suffix List
+   (test-vectors/psl.json), from
+   https://github.com/publicsuffix/list/blob/main/tests/test_psl.txt,
+   dedicated to the public domain (CC0 1.0).
+
+4. Metadata of public Hugging Face dataset cards (test/fixtures/hf/), used
+   as test fixtures; see test/fixtures/hf/SOURCES.md for sources and
+   licences.

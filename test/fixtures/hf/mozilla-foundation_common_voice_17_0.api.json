@@ -1,0 +1,17 @@
+{
+ "id": "mozilla-foundation/common_voice_17_0",
+ "sha": "11dc88355e899d1bf2df74f01b904a8544a17b33",
+ "lastModified": "2025-10-24T18:02:20.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "task_categories:automatic-speech-recognition",
+  "region:us"
+ ],
+ "cardData": {
+  "task_categories": [
+   "automatic-speech-recognition"
+  ]
+ }
+}

@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/afkzonagroup/sourcebook/schema/inventory-v1.schema.json",
+  "title": "Sourcebook inventory (facts collected about training data)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "version"
+  ],
+  "properties": {
+    "kind": {
+      "const": "sourcebook-inventory"
+    },
+    "version": {
+      "const": 1
+    },
+    "generator": {
+      "type": "string"
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string",
+            "pattern": "^(https?://.*)?$"
+          },
+          "category": {
+            "anyOf": [
+              {
+                "enum": [
+                  "public",
+                  "licensed",
+                  "private",
+                  "synthetic",
+                  "other"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "modalities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "licenses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "modality": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,30}$"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "basis": {
+                  "type": "string"
+                },
+                "after_preprocessing": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "collection_period": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "end": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          },
+          "publicly_known": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "reference": {
+                "type": "string"
+              },
+              "revision": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "domain_report": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+!meta {"comment": "pywb style"}
+uk,co,example,news)/a 20250203100001 {"url": "https://news.example.co.uk/a", "mime": "text/html", "status": "200", "length": "1200", "offset": "0", "filename": "sample.warc.gz"}
+uk,co,example,www)/b 20250304100001 {"url": "https://www.example.co.uk/b", "mime": "text/html", "status": "200", "length": 700}
+org,example,blog)/c 20250405100001 {"url": "https://blog.example.org/c", "mime": "text/html", "status": "404", "length": "5100"}
+net,example,img)/p.jpg 20250506100001 {"url": "https://img.example.net/p.jpg", "mime": "image/jpeg", "status": "200", "length": "2100"}
+uk,co,example,news)/a 20250607100001 {"url": "https://news.example.co.uk/a", "mime": "warc/revisit", "length": "300"}
+org,example,files)/doc.txt 20250708100001 {"mime": "text/plain", "length": "400"}
+org,example)/x 20250101000000 {not json}
+org,example)/y 20250101000000 ["array"]
+org,example)/z 20250101000000 {"url": "https://z.example.org/", "length": "-5"}

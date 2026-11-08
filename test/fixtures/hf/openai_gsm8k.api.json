@@ -1,0 +1,145 @@
+{
+ "id": "openai/gsm8k",
+ "sha": "740312add88f781978c0658806c59bc2815b9866",
+ "lastModified": "2026-03-23T10:18:13.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "benchmark:official",
+  "benchmark:eval-yaml",
+  "task_categories:text-generation",
+  "annotations_creators:crowdsourced",
+  "language_creators:crowdsourced",
+  "multilinguality:monolingual",
+  "source_datasets:original",
+  "language:en",
+  "license:mit",
+  "size_categories:10K<n<100K",
+  "format:parquet",
+  "modality:text",
+  "library:datasets",
+  "library:pandas",
+  "library:polars",
+  "library:mlcroissant",
+  "arxiv:2110.14168",
+  "region:us",
+  "math-word-problems"
+ ],
+ "cardData": {
+  "annotations_creators": [
+   "crowdsourced"
+  ],
+  "language_creators": [
+   "crowdsourced"
+  ],
+  "language": [
+   "en"
+  ],
+  "license": [
+   "mit"
+  ],
+  "multilinguality": [
+   "monolingual"
+  ],
+  "size_categories": [
+   "1K<n<10K"
+  ],
+  "source_datasets": [
+   "original"
+  ],
+  "task_categories": [
+   "text-generation"
+  ],
+  "task_ids": [],
+  "paperswithcode_id": "gsm8k",
+  "pretty_name": "Grade School Math 8K",
+  "tags": [
+   "math-word-problems"
+  ],
+  "dataset_info": [
+   {
+    "config_name": "main",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 3963202,
+      "num_examples": 7473
+     },
+     {
+      "name": "test",
+      "num_bytes": 713732,
+      "num_examples": 1319
+     }
+    ],
+    "download_size": 2725633,
+    "dataset_size": 4676934
+   },
+   {
+    "config_name": "socratic",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_bytes": 5198108,
+      "num_examples": 7473
+     },
+     {
+      "name": "test",
+      "num_bytes": 936859,
+      "num_examples": 1319
+     }
+    ],
+    "download_size": 3164254,
+    "dataset_size": 6134967
+   }
+  ],
+  "configs": [
+   {
+    "config_name": "main",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "main/train-*"
+     },
+     {
+      "split": "test",
+      "path": "main/test-*"
+     }
+    ]
+   },
+   {
+    "config_name": "socratic",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "socratic/train-*"
+     },
+     {
+      "split": "test",
+      "path": "socratic/test-*"
+     }
+    ]
+   }
+  ]
+ }
+}

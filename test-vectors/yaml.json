@@ -1,0 +1,444 @@
+[
+  {
+    "name": "mapping",
+    "input": "a: 1\nb: two\nc: true\nd: null\ne: ~\nf:\n",
+    "expect": {
+      "a": 1,
+      "b": "two",
+      "c": true,
+      "d": null,
+      "e": null,
+      "f": null
+    }
+  },
+  {
+    "name": "core-schema-strings",
+    "input": "lang: [no, yes, on, off, y, n]\nversion: 1.0\nhex: 0x1F\noct: 0o17\nneg: -12\nexp: 1e3\nstr: \"1.0\"\n",
+    "expect": {
+      "lang": [
+        "no",
+        "yes",
+        "on",
+        "off",
+        "y",
+        "n"
+      ],
+      "version": 1,
+      "hex": 31,
+      "oct": 15,
+      "neg": -12,
+      "exp": 1000,
+      "str": "1.0"
+    }
+  },
+  {
+    "name": "big-int",
+    "input": "n: 123456789012345678901234567890\n",
+    "expect": {
+      "n": 1.2345678901234568e+29
+    }
+  },
+  {
+    "name": "block-seq-same-indent",
+    "input": "language:\n- en\n- fr\nnext: x\n",
+    "expect": {
+      "language": [
+        "en",
+        "fr"
+      ],
+      "next": "x"
+    }
+  },
+  {
+    "name": "nested-compact",
+    "input": "configs:\n  - config_name: default\n    data_files:\n      - split: train\n        path: data/*\n  - - nested\n    - list\n",
+    "expect": {
+      "configs": [
+        {
+          "config_name": "default",
+          "data_files": [
+            {
+              "split": "train",
+              "path": "data/*"
+            }
+          ]
+        },
+        [
+          "nested",
+          "list"
+        ]
+      ]
+    }
+  },
+  {
+    "name": "quoted",
+    "input": "a: \"tab\\there \\u00e9 \\x41 quote\\\" backslash\\\\\"\nb: 'it''s'\nc: \"line one\n  line two\n\n  line three\"\nd: 'folded\n  single'\n",
+    "expect": {
+      "a": "tab\there é A quote\" backslash\\",
+      "b": "it's",
+      "c": "line one line two\nline three",
+      "d": "folded single"
+    }
+  },
+  {
+    "name": "escaped-break",
+    "input": "a: \"abc\\\n  def\"\n",
+    "expect": {
+      "a": "abcdef"
+    }
+  },
+  {
+    "name": "block-literal",
+    "input": "a: |\n  line 1\n    indented\n\n  line 3\nb: |-\n  stripped\nc: |+\n  kept\n\nd: x\n",
+    "expect": {
+      "a": "line 1\n  indented\n\nline 3\n",
+      "b": "stripped",
+      "c": "kept\n\n",
+      "d": "x"
+    }
+  },
+  {
+    "name": "block-folded",
+    "input": "a: >\n  one\n  two\n\n  three\n    more\n  four\n",
+    "expect": {
+      "a": "one two\nthree\n  more\nfour\n"
+    }
+  },
+  {
+    "name": "block-indicator",
+    "input": "a: |2\n    two extra\n  base\n",
+    "expect": {
+      "a": "  two extra\nbase\n"
+    }
+  },
+  {
+    "name": "plain-multiline",
+    "input": "a: one\n  two\n\n  three\nb: x\n",
+    "expect": {
+      "a": "one two\nthree",
+      "b": "x"
+    }
+  },
+  {
+    "name": "flow",
+    "input": "a: [1, \"two\", three, {k: v, q: \"x\"}, [nested]]\nb: {url: http://example.com/a, empty: , n: 5}\nc: []\nd: {}\n",
+    "expect": {
+      "a": [
+        1,
+        "two",
+        "three",
+        {
+          "k": "v",
+          "q": "x"
+        },
+        [
+          "nested"
+        ]
+      ],
+      "b": {
+        "url": "http://example.com/a",
+        "empty": null,
+        "n": 5
+      },
+      "c": [],
+      "d": {}
+    }
+  },
+  {
+    "name": "flow-multiline",
+    "input": "a: [one,\n  two, # comment\n  three]\n",
+    "expect": {
+      "a": [
+        "one",
+        "two",
+        "three"
+      ]
+    }
+  },
+  {
+    "name": "comments",
+    "input": "# top\na: 1 # trailing\n# middle\nb: \"x # not a comment\"\nc: x#y\n",
+    "expect": {
+      "a": 1,
+      "b": "x # not a comment",
+      "c": "x#y"
+    }
+  },
+  {
+    "name": "document-markers",
+    "input": "---\na: 1\n...\n",
+    "expect": {
+      "a": 1
+    }
+  },
+  {
+    "name": "urls-and-colons",
+    "input": "url: https://huggingface.co/datasets/x\ntime: 12:30\nwin: C:\\path\n",
+    "expect": {
+      "url": "https://huggingface.co/datasets/x",
+      "time": "12:30",
+      "win": "C:\\path"
+    }
+  },
+  {
+    "name": "bom-crlf",
+    "input": "\ufeffa: 1\r\nb: 2\r\n",
+    "expect": {
+      "a": 1,
+      "b": 2
+    }
+  },
+  {
+    "name": "top-level-list",
+    "input": "- 1\n- 2\n",
+    "expect": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "empty",
+    "input": "",
+    "expect": null
+  },
+  {
+    "name": "norway",
+    "input": "language:\n  - \"no\"\n  - no\n  - nb\n",
+    "expect": {
+      "language": [
+        "no",
+        "no",
+        "nb"
+      ]
+    }
+  },
+  {
+    "name": "unicode",
+    "input": "name: \"Ελληνικά 中文 ‘quotes’\"\nplain: Žemaitija\n",
+    "expect": {
+      "name": "Ελληνικά 中文 ‘quotes’",
+      "plain": "Žemaitija"
+    }
+  },
+  {
+    "name": "key-quoted",
+    "input": "\"a b\": 1\n'c: d': 2\n",
+    "expect": {
+      "a b": 1,
+      "c: d": 2
+    }
+  },
+  {
+    "name": "err-anchor",
+    "input": "a: &x 1\nb: *x\n",
+    "error": "anchor-alias-tag",
+    "line": 1
+  },
+  {
+    "name": "err-alias",
+    "input": "a: 1\nb: *x\n",
+    "error": "anchor-alias-tag",
+    "line": 2
+  },
+  {
+    "name": "err-anchor-in-flow",
+    "input": "a: [&x 1, 2]\n",
+    "error": "anchor-alias-tag",
+    "line": 1
+  },
+  {
+    "name": "err-alias-in-flow",
+    "input": "a: {k: *x}\n",
+    "error": "anchor-alias-tag",
+    "line": 1
+  },
+  {
+    "name": "err-tag-in-flow",
+    "input": "a: [!!str 1]\n",
+    "error": "anchor-alias-tag",
+    "line": 1
+  },
+  {
+    "name": "err-tag",
+    "input": "a: !!python/object:os.system x\n",
+    "error": "anchor-alias-tag",
+    "line": 1
+  },
+  {
+    "name": "err-merge",
+    "input": "base: {a: 1}\nderived:\n  <<: {a: 2}\n",
+    "error": "merge-key",
+    "line": 3
+  },
+  {
+    "name": "err-complex-key",
+    "input": "? a\n: b\n",
+    "error": "complex-key",
+    "line": 1
+  },
+  {
+    "name": "err-duplicate",
+    "input": "a: 1\na: 2\n",
+    "error": "duplicate-key",
+    "line": 2
+  },
+  {
+    "name": "err-proto",
+    "input": "__proto__: {polluted: true}\n",
+    "error": "forbidden-key",
+    "line": 1
+  },
+  {
+    "name": "err-constructor",
+    "input": "a:\n  constructor: x\n",
+    "error": "forbidden-key",
+    "line": 2
+  },
+  {
+    "name": "err-proto-flow",
+    "input": "a: {__proto__: 1}\n",
+    "error": "forbidden-key",
+    "line": 1
+  },
+  {
+    "name": "err-tab-indent",
+    "input": "a:\n\tb: 1\n",
+    "error": "tab-indentation",
+    "line": 2
+  },
+  {
+    "name": "err-control",
+    "input": "a: \"x\u0007\"\n",
+    "error": "control-character",
+    "line": 1
+  },
+  {
+    "name": "err-bad-indent",
+    "input": "a: 1\n  b: 2\n",
+    "error": "mapping-in-scalar",
+    "line": 2
+  },
+  {
+    "name": "err-mapping-in-scalar",
+    "input": "a: b: c\n",
+    "error": "mapping-in-scalar",
+    "line": 1
+  },
+  {
+    "name": "err-two-documents",
+    "input": "a: 1\n---\nb: 2\n",
+    "error": "multiple-documents",
+    "line": 2
+  },
+  {
+    "name": "err-directive",
+    "input": "%YAML 1.2\n---\na: 1\n",
+    "error": "directive",
+    "line": 1
+  },
+  {
+    "name": "err-unterminated-string",
+    "input": "a: \"abc\n",
+    "error": "unterminated-string",
+    "line": 1
+  },
+  {
+    "name": "err-unterminated-flow",
+    "input": "a: [1, 2\n",
+    "error": "unterminated-flow",
+    "line": 1
+  },
+  {
+    "name": "err-bad-escape",
+    "input": "a: \"\\q\"\n",
+    "error": "bad-escape",
+    "line": 1
+  },
+  {
+    "name": "err-surrogate-escape",
+    "input": "a: \"\\ud800\"\n",
+    "error": "bad-escape",
+    "line": 1
+  },
+  {
+    "name": "err-inf",
+    "input": "a: .inf\n",
+    "error": "non-finite-number",
+    "line": 1
+  },
+  {
+    "name": "err-nan",
+    "input": "a: .NaN\n",
+    "error": "non-finite-number",
+    "line": 1
+  },
+  {
+    "name": "err-huge-float",
+    "input": "a: 1e400\n",
+    "error": "non-finite-number",
+    "line": 1
+  },
+  {
+    "name": "err-empty-flow-entry",
+    "input": "a: [1,,2]\n",
+    "error": "empty-flow-entry",
+    "line": 1
+  },
+  {
+    "name": "err-flow-pair",
+    "input": "a: [k: v]\n",
+    "error": "bad-flow",
+    "line": 1
+  },
+  {
+    "name": "err-bad-block-header",
+    "input": "a: |x\n  t\n",
+    "error": "bad-block-scalar",
+    "line": 1
+  },
+  {
+    "name": "err-lone-cr",
+    "input": "a: 1\rb: 2\n",
+    "error": "bad-newline",
+    "line": 1
+  },
+  {
+    "name": "err-reserved",
+    "input": "a: @x\n",
+    "error": "reserved-indicator",
+    "line": 1
+  },
+  {
+    "name": "limit-depth",
+    "input": "k:\n  k:\n    k:\n      k:\n        k:\n          k:\n            k:\n              k:\n                k:\n                  k:\n                    k:\n                      k:\n                        k:\n                          k:\n                            k:\n                              k:\n                                k:\n                                  k:\n                                    k:\n                                      k:\n                                        k:\n                                          k:\n                                            k:\n                                              k:\n                                                k:\n                                                  k:\n                                                    k:\n                                                      k:\n                                                        k:\n                                                          k:\n                                                            k:\n                                                              k:\n                                                                k:\n                                                                  k:\n                                                                    k:\n                                                                      k:\n                                                                        k:\n                                                                          k:\n                                                                            k:\n                                                                              k:\n                                                                                k:\n                                                                                  k:\n                                                                                    k:\n                                                                                      k:\n                                                                                        k:\n                                                                                          k:\n                                                                                            k:\n                                                                                              k:\n                                                                                                k:\n                                                                                                  k:\n                                                                                                    k:\n                                                                                                      k:\n                                                                                                        k:\n                                                                                                          k:\n                                                                                                            k:\n                                                                                                              k:\n                                                                                                                k:\n                                                                                                                  k:\n                                                                                                                    k:\n                                                                                                                      k:\n                                                                                                                        k:\n                                                                                                                          k:\n                                                                                                                            k:\n                                                                                                                              k:\n                                                                                                                                k:\n                                                                                                                                  k:\n                                                                                                                                    k:\n                                                                                                                                      k:\n                                                                                                                                        k:\n                                                                                                                                          k: 1\n",
+    "limits": {
+      "maxDepth": 64,
+      "maxNodes": 200000,
+      "maxScalarLength": 1048576
+    },
+    "error": "too-deep",
+    "line": 65
+  },
+  {
+    "name": "limit-nodes",
+    "input": "list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299]\n",
+    "limits": {
+      "maxDepth": 64,
+      "maxNodes": 100,
+      "maxScalarLength": 1000
+    },
+    "error": "too-many-nodes",
+    "line": 1
+  },
+  {
+    "name": "limit-scalar",
+    "input": "a: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n",
+    "limits": {
+      "maxDepth": 64,
+      "maxNodes": 1000,
+      "maxScalarLength": 1000
+    },
+    "error": "scalar-too-long",
+    "line": 1
+  }
+]

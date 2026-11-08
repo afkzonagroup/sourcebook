@@ -1,0 +1,36 @@
+{
+ "id": "databricks/databricks-dolly-15k",
+ "sha": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+ "lastModified": "2023-06-30T18:34:13.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "task_categories:question-answering",
+  "task_categories:summarization",
+  "language:en",
+  "license:cc-by-sa-3.0",
+  "size_categories:10K<n<100K",
+  "format:json",
+  "modality:text",
+  "library:datasets",
+  "library:pandas",
+  "library:mlcroissant",
+  "library:polars",
+  "arxiv:2203.02155",
+  "region:us"
+ ],
+ "cardData": {
+  "license": "cc-by-sa-3.0",
+  "task_categories": [
+   "question-answering",
+   "summarization"
+  ],
+  "language": [
+   "en"
+  ],
+  "size_categories": [
+   "10K<n<100K"
+  ]
+ }
+}

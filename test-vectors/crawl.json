@@ -1,0 +1,150 @@
+[
+  {
+    "file": "sample.warc",
+    "kind": "warc",
+    "records": [
+      {
+        "url": "https://news.example.co.uk/a",
+        "size": "1000",
+        "modality": "text",
+        "month": "2025-02"
+      },
+      {
+        "url": "https://www.example.co.uk/b",
+        "size": "500",
+        "modality": "text",
+        "month": "2025-03"
+      },
+      {
+        "url": "https://img.example.net/p.jpg",
+        "size": "2000",
+        "modality": "image",
+        "month": "2025-05"
+      },
+      {
+        "url": "https://files.example.org/doc.txt",
+        "size": "300",
+        "modality": "text",
+        "month": "2025-07"
+      }
+    ],
+    "filtered": {
+      "http_not_2xx": 1,
+      "warc_metadata": 1,
+      "warc_request": 1,
+      "warc_revisit": 1,
+      "warc_warcinfo": 1
+    }
+  },
+  {
+    "file": "sample.cdx",
+    "kind": "cdx",
+    "records": [
+      {
+        "url": "https://news.example.co.uk/a",
+        "size": "1200",
+        "modality": "text",
+        "month": "2025-02"
+      },
+      {
+        "url": "https://www.example.co.uk/b",
+        "size": "700",
+        "modality": "text",
+        "month": "2025-03"
+      },
+      {
+        "url": "https://img.example.net/p.jpg",
+        "size": "2100",
+        "modality": "image",
+        "month": "2025-05"
+      },
+      {
+        "host": "files.example.org",
+        "size": "400",
+        "modality": "text",
+        "month": "2025-07"
+      }
+    ],
+    "filtered": {
+      "http_not_2xx": 1,
+      "invalid_size": 1,
+      "revisit": 1
+    }
+  },
+  {
+    "file": "sample.cdxj",
+    "kind": "cdxj",
+    "records": [
+      {
+        "url": "https://news.example.co.uk/a",
+        "size": "1200",
+        "modality": "text",
+        "month": "2025-02"
+      },
+      {
+        "url": "https://www.example.co.uk/b",
+        "size": "700",
+        "modality": "text",
+        "month": "2025-03"
+      },
+      {
+        "url": "https://img.example.net/p.jpg",
+        "size": "2100",
+        "modality": "image",
+        "month": "2025-05"
+      },
+      {
+        "host": "files.example.org",
+        "size": "400",
+        "modality": "text",
+        "month": "2025-07"
+      }
+    ],
+    "filtered": {
+      "http_not_2xx": 1,
+      "invalid_json": 1,
+      "invalid_line": 1,
+      "invalid_size": 1,
+      "revisit": 1
+    }
+  },
+  {
+    "file": "sample.csv",
+    "kind": "csv",
+    "records": [
+      {
+        "url": "https://news.example.co.uk/a",
+        "size": "1200",
+        "modality": "text",
+        "month": "2025-02"
+      },
+      {
+        "url": "https://www.example.co.uk/b",
+        "size": "700",
+        "modality": "text",
+        "month": "2025-03"
+      },
+      {
+        "url": "https://img.example.net/p.jpg",
+        "size": "2100",
+        "modality": "image",
+        "month": "2025-05"
+      },
+      {
+        "url": "https://files.example.org/doc.txt",
+        "size": "400",
+        "modality": "text",
+        "month": "2025-07"
+      },
+      {
+        "url": "https://quoted.example.org/a,b",
+        "size": "50",
+        "modality": "text",
+        "month": "2025-07"
+      }
+    ],
+    "filtered": {
+      "invalid_size": 1
+    }
+  }
+]

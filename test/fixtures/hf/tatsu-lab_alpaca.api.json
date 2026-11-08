@@ -1,0 +1,35 @@
+{
+ "id": "tatsu-lab/alpaca",
+ "sha": "dce01c9b08f87459cf36a430d809084718273017",
+ "lastModified": "2023-05-22T20:33:36.000Z",
+ "private": false,
+ "gated": false,
+ "disabled": false,
+ "tags": [
+  "task_categories:text-generation",
+  "language:en",
+  "license:cc-by-nc-4.0",
+  "size_categories:10K<n<100K",
+  "format:parquet",
+  "modality:text",
+  "library:datasets",
+  "library:pandas",
+  "library:polars",
+  "library:mlcroissant",
+  "region:us",
+  "instruction-finetuning"
+ ],
+ "cardData": {
+  "license": "cc-by-nc-4.0",
+  "language": [
+   "en"
+  ],
+  "tags": [
+   "instruction-finetuning"
+  ],
+  "pretty_name": "Alpaca",
+  "task_categories": [
+   "text-generation"
+  ]
+ }
+}

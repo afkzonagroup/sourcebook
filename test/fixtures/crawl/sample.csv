@@ -1,0 +1,7 @@
+url,bytes,modality,date
+https://news.example.co.uk/a,1200,text,2025-02-03
+"https://www.example.co.uk/b",700,text,2025-03-04T10:00:00Z
+https://img.example.net/p.jpg,2100,image,20250506
+https://files.example.org/doc.txt,400,text,2025-07
+"https://quoted.example.org/a,b",50,text,2025-07
+https://bad.example.org/,not-a-number,text,2025-07
