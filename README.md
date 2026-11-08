@@ -306,11 +306,10 @@ and generated summaries keep "Sourcebook by AFKzona Group" with a link (see
 licence without the AGPL obligations is available ([COMMERCIAL.md](COMMERCIAL.md)).
 "Sourcebook" is a trademark of MB AFKzona Group ([TRADEMARKS.md](TRADEMARKS.md)).
 
-**Enterprise.** AFKzona Group offers, outside this repository: a hosted
-dashboard for summaries across models and versions, continuous monitoring of
-datasets and crawls, SSO/SAML, roles, audit evidence packs, a legal-update
-feed, white-label summaries without the attribution footer, and SLA support.
-Contact info@afkzonagroup.lt.
+**Enterprise.** MB AFKzona Group offers a commercial licence for
+organisations that cannot use the AGPL-3.0 terms (including white-label use
+without the attribution notice), integration into your systems, custom
+connectors and features, and support agreements. Contact info@afkzonagroup.lt.
 
 ## Contributing
 
